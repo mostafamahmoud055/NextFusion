@@ -1,0 +1,917 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "process": "Process",
+    "consulting": "Consulting",
+    "products": "Products",
+    "industries": "Industries",
+    "contact": "Contact"
+  },
+  "common": {
+    "learnMore": "Learn more",
+    "viewAll": "View all",
+    "contactUs": "Contact Us",
+    "requestDemo": "Request a Demo",
+    "getInTouch": "Get in touch",
+    "comingSoon": "Coming Soon",
+    "inDevelopment": "In Development",
+    "sendMessage": "Send Message",
+    "messageSent": "Message sent",
+    "messageSentDesc": "Thank you for reaching out. We will get back to you shortly.",
+    "language": "Language",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "locales": {
+      "en": "EN",
+      "ar": "AR"
+    }
+  },
+  "layout": {
+    "homeAria": "NextFusion home",
+    "mainNav": "Main navigation",
+    "switchLocale": "Switch to {language}"
+  },
+  "company": {
+    "tagline": "Empowering Businesses Through Digital Innovation",
+    "description": "We help organizations accelerate their digital transformation journey through intelligent software solutions, enterprise systems, and professional consulting services.",
+    "teamExpertise": "We believe that successful digital transformation starts with a deep understanding of business needs before selecting technology."
+  },
+  "seo": {
+    "home": {
+      "title": "Digital Transformation & ERP Solutions",
+      "description": "NextFusion empowers businesses through digital innovation — ERP solutions, software development, and IT consulting."
+    },
+    "about": {
+      "title": "About Us",
+      "description": "NextFusion is a specialized digital transformation and technology consulting company serving public and private sector organizations."
+    },
+    "services": {
+      "title": "Services",
+      "description": "ERP solutions, digital transformation, custom software, system integration, business intelligence, and e-commerce."
+    },
+    "servicesErp": {
+      "title": "ERP Solutions",
+      "description": "Comprehensive Enterprise Resource Planning solutions integrating all business operations into one unified platform."
+    },
+    "servicesDigitalTransformation": {
+      "title": "Digital Transformation",
+      "description": "Digitize services and modernize operations through workflow automation, smart portals, and paperless solutions."
+    },
+    "servicesSoftwareDevelopment": {
+      "title": "Custom Software Development",
+      "description": "Web apps, mobile apps, government systems, and enterprise platforms built around your needs."
+    },
+    "servicesIntegration": {
+      "title": "System Integration",
+      "description": "Connect business systems through secure APIs and modern integration technologies."
+    },
+    "servicesBusinessIntelligence": {
+      "title": "Business Intelligence",
+      "description": "Transform business data into actionable insights through dashboards and advanced reporting."
+    },
+    "servicesEcommerce": {
+      "title": "E-Commerce Solutions",
+      "description": "Online stores, marketplaces, and omnichannel commerce platforms integrated with ERP and fulfillment."
+    },
+    "consulting": {
+      "title": "Consulting Services",
+      "description": "Business analysis, ERP consulting, digital transformation, BPR, PMO, IT strategy, and change management."
+    },
+    "products": {
+      "title": "Products",
+      "description": "NextFlow ERP, HR, POS, and Ecommerce — integrated enterprise solutions."
+    },
+    "productsErp": { "title": "NextFlow ERP", "description": "Integrated ERP platform designed to manage all enterprise operations." },
+    "productsHr": { "title": "NextFlow HR", "description": "Human Resource Management System." },
+    "productsPos": { "title": "NextFlow POS", "description": "Modern Point of Sale System." },
+    "productsEcommerce": { "title": "NextFlow Ecommerce", "description": "Integrated E-commerce Platform." },
+    "industries": {
+      "title": "Industries",
+      "description": "Digital transformation and ERP expertise across government, healthcare, education, manufacturing, and more."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "description": "Contact NextFusion — info{'@'}nextfusion.com. Offices in Alexandria, Egypt and Amman, Jordan."
+    },
+    "process": {
+      "title": "Our Process",
+      "description": "How NextFusion defines, builds, and scales digital solutions — from discovery through deployment and long-term support."
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "Digital Transformation · ERP · Software",
+      "tagline": "Enterprise consulting & technology delivery",
+      "title": "Empowering Businesses Through Digital Innovation",
+      "description": "We help organizations accelerate their digital transformation journey through intelligent software solutions, enterprise systems, and professional consulting services.",
+      "ctaExplore": "Explore services",
+      "ctaProcess": "Our process",
+      "mockupLabel": "Enterprise operations dashboard"
+    },
+    "consulting": {
+      "title": "Consulting & advisory",
+      "description": "Business analysis, ERP consulting, digital strategy, PMO, and change management — structured support beyond implementation.",
+      "cta": "View consulting services"
+    },
+    "about": {
+      "title": "About NextFusion",
+      "description": "Specialized digital transformation and technology consulting for growing organizations.",
+      "cta": "Learn about us",
+      "mockupLabel": "Analytics & BI dashboard"
+    },
+    "services": { "title": "Our Services", "description": "End-to-end capabilities from strategy through implementation." },
+    "products": { "title": "Our Products", "description": "Integrated enterprise solutions under the NextFlow product suite." },
+    "industries": { "title": "Industries We Serve", "description": "Solutions delivered across multiple sectors." },
+    "why": { "title": "Why NextFusion?", "description": "What sets us apart as a consulting and software partner." },
+    "methodology": {
+      "title": "Implementation Methodology",
+      "description": "Our delivery approach follows international best practices.",
+      "cta": "View our process",
+      "mockupLabel": "Digital transformation roadmap"
+    },
+    "technologies": { "title": "Our Technology", "description": "Modern technologies for building reliable digital solutions." },
+    "partners": {
+      "title": "Partners & Clients",
+      "description": "Trusted by organizations seeking reliable digital transformation solutions.",
+      "note": "Client and partner logos will be added here when available."
+    },
+    "global": {
+      "title": "We serve across the region",
+      "p1": "NextFusion supports public and private sector organizations across Egypt, Jordan, and the wider MENA region.",
+      "p2": "We deliver ERP systems, digital transformation programs, and custom software built around real business needs.",
+      "p3": "As a focused technology partner, we combine consulting discipline with hands-on implementation to help teams modernize with confidence."
+    },
+    "expertise": {
+      "title": "Expert builders delivering enterprise-grade solutions",
+      "description": "Our teams cover ERP, digital transformation, custom development, integration, and business intelligence — helping organizations build secure, scalable digital platforms."
+    },
+    "team": {
+      "title": "A team you can rely on",
+      "description": "Every engagement is different. Our agile approach and flexible delivery model let us shape collaboration around your goals, timelines, and internal capabilities.",
+      "cta": "Learn about us",
+      "pillars": {
+        "focus": {
+          "title": "Business-first delivery",
+          "description": "We start with business analysis and requirements before technology — so solutions align with how your organization actually works."
+        },
+        "flexible": {
+          "title": "Flexible and scalable",
+          "description": "From advisory sprints to full implementation teams, we adapt engagement models to match project scope and growth plans."
+        },
+        "expertise": {
+          "title": "Specialized expertise",
+          "description": "ERP, digital transformation, and enterprise software are our core focus — not generic outsourcing."
+        }
+      }
+    },
+    "highlights": {
+      "title": "NextFusion at a glance",
+      "services": "Core services",
+      "regions": "Regional offices",
+      "industries": "Industries served",
+      "products": "NextFlow products"
+    },
+    "cta": {
+      "title": "Ready to start your project?",
+      "subtitle": "Let's get to work.",
+      "description": "Whether you need an ERP system, digital transformation consulting, or a custom software solution, our team is ready to help."
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Specialized digital transformation and technology consulting.",
+    "eyebrow": "Who we are",
+    "presence": {
+      "title": "Regional presence",
+      "description": "We work with organizations across Egypt, Jordan, and the wider MENA region."
+    },
+    "methodology": {
+      "cta": "View our process"
+    },
+    "story": {
+      "title": "Company Story",
+      "p1": "NextFusion is a specialized digital transformation and technology consulting company that helps public and private sector organizations enhance their performance and operational efficiency through strategic consulting, business analysis, business process reengineering, and the adoption of modern digital solutions.",
+      "p2": "We believe that successful digital transformation starts with a deep understanding of business needs before selecting technology. Therefore, we focus on analyzing organizational requirements and designing solutions that align with strategic objectives and support sustainable growth.",
+      "p3": "Our services include business and technology consulting, digital transformation program management, software development, systems integration, and data analytics. We also provide a range of enterprise solutions, including ERP systems, Human Resource Management systems, Point of Sale solutions, and E-commerce platforms."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "text": "To be the leading strategic partner in digital transformation and technology consulting across the region by empowering organizations to redesign their business models, strengthen institutional capabilities, and leverage modern technologies to build more efficient, agile, and sustainable enterprises."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "text": "We help organizations achieve comprehensive digital transformation by providing specialized consulting services, business analysis, business process reengineering, digital strategy development, and innovative technology solutions that drive growth and innovation."
+    },
+    "values": {
+      "title": "Our Values",
+      "description": "The principles that guide how we work with clients and build our team.",
+      "innovation": { "title": "Innovation", "description": "We apply modern tools and methods while staying grounded in business outcomes.", "icon": "i-lucide-sparkles" },
+      "excellence": { "title": "Excellence", "description": "We hold ourselves to high standards in analysis, design, development, and delivery.", "icon": "i-lucide-award" },
+      "integrity": { "title": "Integrity", "description": "We communicate honestly about scope, timelines, and what technology can realistically achieve.", "icon": "i-lucide-scale" },
+      "customerSuccess": { "title": "Customer Success", "description": "We measure our success by the outcomes our clients achieve.", "icon": "i-lucide-heart-handshake" },
+      "continuousImprovement": { "title": "Continuous Improvement", "description": "We continuously refine our methods, skills, and solutions.", "icon": "i-lucide-trending-up" },
+      "collaboration": { "title": "Collaboration", "description": "We work closely with client teams, treating every engagement as a shared effort.", "icon": "i-lucide-handshake" }
+    },
+    "leadership": {
+      "title": "Leadership Team",
+      "description": "Leadership profiles will be published as our team continues to grow."
+    },
+    "cta": {
+      "title": "Interested in working with us?",
+      "description": "Reach out to discuss your project, ERP needs, or technology roadmap."
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive capabilities to help you plan, build, and optimize your technology landscape.",
+    "intro": "From ERP and digital transformation to custom software, integration, analytics, and e-commerce — we deliver structured engagements built around business outcomes, not technology for its own sake.",
+    "keyCapabilities": "Key Capabilities",
+    "detail": {
+      "overviewNote": "We align every engagement with your business objectives before recommending technology.",
+      "executionTitle": "Project execution by experienced product builders",
+      "executionDescription": "Structured delivery with clear accountability, quality standards, and business alignment at every stage.",
+      "features": "What we deliver",
+      "featuresDescription": "Capabilities designed to solve real operational and strategic challenges.",
+      "viewProcess": "View our process",
+      "allServices": "All services",
+      "related": "Related services",
+      "relatedDescription": "Explore complementary capabilities that often support this engagement."
+    },
+    "cta": {
+      "title": "Not sure which service fits your needs?",
+      "description": "Contact us for a consultation — we'll help you identify the right starting point."
+    },
+    "erp": {
+      "title": "ERP Solutions",
+      "eyebrow": "Enterprise systems",
+      "heroTagline": "Unify operations on one enterprise platform",
+      "mockupLabel": "ERP operations console",
+      "shortDescription": "Unified ERP platforms that connect finance, operations, and people across your organization.",
+      "description": "Comprehensive Enterprise Resource Planning solutions that integrate business operations into one reliable platform.",
+      "overview": {
+        "title": "Why ERP matters for your organization",
+        "p1": "ERP is the operational backbone of modern enterprises — connecting finance, supply chain, HR, sales, and reporting in one source of truth. When implemented well, it eliminates silos, improves visibility, and supports smarter decisions at every level.",
+        "p2": "NextFusion helps public and private sector organizations plan, configure, and roll out ERP solutions aligned with how teams actually work — from requirements and process mapping through go-live and long-term optimization.",
+        "highlight": "We focus on business process fit first, then technology — so your ERP investment supports sustainable operational improvement."
+      },
+      "featureBlocks": [
+        { "title": "Finance & accounting", "description": "General ledger, AP/AR, budgeting, and financial reporting with audit-ready controls.", "icon": "i-lucide-wallet" },
+        { "title": "Human resources", "description": "Employee records, payroll integration, leave management, and workforce planning.", "icon": "i-lucide-users" },
+        { "title": "Procurement & inventory", "description": "Purchase workflows, stock control, warehousing, and supplier management.", "icon": "i-lucide-package" },
+        { "title": "Sales & CRM", "description": "Pipeline management, customer data, order processing, and service tracking.", "icon": "i-lucide-handshake" },
+        { "title": "Manufacturing & projects", "description": "Production planning, project costing, assets, and operational scheduling.", "icon": "i-lucide-factory" },
+        { "title": "Reporting & analytics", "description": "Executive dashboards, KPI tracking, and operational reports from unified data.", "icon": "i-lucide-bar-chart-2" }
+      ],
+      "process": {
+        "title": "How ERP implementation works",
+        "description": "A phased approach that reduces risk and keeps stakeholders aligned from discovery through post-launch support.",
+        "steps": [
+          { "title": "Discovery & requirements", "description": "Map processes, pain points, and success criteria with business and IT stakeholders." },
+          { "title": "Solution design", "description": "Define modules, integrations, data migration approach, and rollout phases." },
+          { "title": "Configuration & development", "description": "Configure ERP modules, customize workflows, and build required extensions." },
+          { "title": "Testing & validation", "description": "Functional, integration, and UAT cycles to validate readiness before go-live." },
+          { "title": "Training & go-live", "description": "User enablement, cutover planning, and supervised launch support." },
+          { "title": "Post-launch optimization", "description": "Hypercare, enhancements, and continuous improvement after deployment." }
+        ]
+      },
+      "benefits": {
+        "title": "Built for performance, security, and scale",
+        "description": "Enterprise-grade delivery standards applied across every ERP engagement.",
+        "items": [
+          { "title": "Performance", "description": "Architectures optimized for responsive operations and growing transaction volumes.", "icon": "i-lucide-zap" },
+          { "title": "Business alignment", "description": "Solutions shaped around real workflows — not generic templates forced onto your teams.", "icon": "i-lucide-target" },
+          { "title": "Quality assurance", "description": "Structured testing across modules, integrations, and user acceptance scenarios.", "icon": "i-lucide-shield-check" },
+          { "title": "Security & compliance", "description": "Role-based access, audit trails, and controls aligned with enterprise policies.", "icon": "i-lucide-lock" },
+          { "title": "Scalability", "description": "Platforms designed to support new modules, users, and business units over time.", "icon": "i-lucide-trending-up" },
+          { "title": "Ongoing support", "description": "Maintenance, enhancements, and advisory support beyond initial go-live.", "icon": "i-lucide-headphones" }
+        ]
+      },
+      "cta": {
+        "title": "Ready to modernize your ERP landscape?",
+        "description": "Let's discuss your current systems, pain points, and a practical path to a unified platform."
+      },
+      "features": ["Finance", "Human Resources", "Procurement", "Inventory", "Sales", "CRM", "Manufacturing", "Projects", "Assets", "Payroll"]
+    },
+    "digitalTransformation": {
+      "title": "Digital Transformation",
+      "eyebrow": "Modernization programs",
+      "heroTagline": "Digitize services and modernize how you operate",
+      "mockupLabel": "Transformation program overview",
+      "shortDescription": "Digitize services, automate workflows, and modernize how your organization operates.",
+      "description": "Helping organizations digitize services and modernize operations through smart, practical technology programs.",
+      "overview": {
+        "title": "Transform operations with purpose",
+        "p1": "Digital transformation is not a single project — it is a structured shift in how services are delivered, processes run, and teams collaborate. Success depends on aligning technology with business priorities and change readiness.",
+        "p2": "NextFusion supports government and enterprise clients with transformation roadmaps, workflow automation, smart portals, and paperless initiatives — implemented in phases that minimize disruption while delivering measurable improvements.",
+        "highlight": "We help you modernize with clarity — defining what to digitize first, why it matters, and how to sustain adoption."
+      },
+      "featureBlocks": [
+        { "title": "Transformation strategy", "description": "Assess maturity, define priorities, and build a phased roadmap tied to business outcomes.", "icon": "i-lucide-compass" },
+        { "title": "Workflow automation", "description": "Digitize approvals, routing, notifications, and task handoffs across departments.", "icon": "i-lucide-workflow" },
+        { "title": "Smart portals", "description": "Employee, citizen, and customer portals with role-based access and self-service.", "icon": "i-lucide-layout-dashboard" },
+        { "title": "Paperless operations", "description": "Electronic forms, digital signatures, document management, and audit trails.", "icon": "i-lucide-file-digit" },
+        { "title": "Process reengineering", "description": "Redesign workflows before automation to remove waste and clarify accountability.", "icon": "i-lucide-git-branch" },
+        { "title": "Change enablement", "description": "Training, communications, and adoption support so new ways of working stick.", "icon": "i-lucide-users" }
+      ],
+      "process": {
+        "title": "How transformation programs work",
+        "description": "Structured phases that connect strategy, design, build, and organizational adoption.",
+        "steps": [
+          { "title": "Current-state assessment", "description": "Document processes, systems, and pain points across priority areas." },
+          { "title": "Target operating model", "description": "Define future workflows, service models, and technology enablers." },
+          { "title": "Roadmap & prioritization", "description": "Sequence initiatives by value, risk, and dependency." },
+          { "title": "Solution delivery", "description": "Build portals, automations, and integrations in iterative releases." },
+          { "title": "Pilot & rollout", "description": "Validate with pilot groups, refine, and expand across the organization." },
+          { "title": "Continuous improvement", "description": "Monitor adoption, optimize flows, and extend digitization scope." }
+        ]
+      },
+      "benefits": {
+        "title": "Outcomes you can measure",
+        "description": "Transformation initiatives designed for operational impact and long-term sustainability.",
+        "items": [
+          { "title": "Faster service delivery", "description": "Reduced manual handoffs and clearer digital service paths.", "icon": "i-lucide-zap" },
+          { "title": "Operational visibility", "description": "Track requests, SLAs, and bottlenecks across digitized workflows.", "icon": "i-lucide-eye" },
+          { "title": "Quality & consistency", "description": "Standardized processes with validation rules and auditability.", "icon": "i-lucide-shield-check" },
+          { "title": "Security by design", "description": "Access controls, logging, and compliance considerations from day one.", "icon": "i-lucide-lock" },
+          { "title": "Scalable programs", "description": "Expand digitization incrementally without restarting from scratch.", "icon": "i-lucide-layers" },
+          { "title": "Sustained adoption", "description": "Change management and support so teams actually use new tools.", "icon": "i-lucide-heart-handshake" }
+        ]
+      },
+      "cta": {
+        "title": "Planning a digital transformation initiative?",
+        "description": "Let's map your priorities and define a realistic first phase that delivers visible value."
+      },
+      "features": ["Workflow Automation", "Digital Government Services", "Paperless Solutions", "Process Automation", "Electronic Archiving", "Smart Portals"]
+    },
+    "softwareDevelopment": {
+      "title": "Custom Software Development",
+      "eyebrow": "Product engineering",
+      "heroTagline": "Build high-quality scalable business applications",
+      "mockupLabel": "Application product dashboard",
+      "shortDescription": "High-quality web and enterprise applications built around your business requirements.",
+      "description": "Design and development of custom business applications tailored to organizational needs and growth plans.",
+      "overview": {
+        "title": "Software built for how you work",
+        "p1": "Off-the-shelf tools rarely fit complex operational models. Custom software lets you encode your processes, integrations, and user experiences precisely — without compromising on security or scalability.",
+        "p2": "NextFusion delivers web applications, mobile solutions, government systems, and enterprise platforms using modern architectures and agile delivery — from discovery and UX design through deployment and long-term support.",
+        "highlight": "We build software as a business asset — reliable, maintainable, and ready to evolve with your organization."
+      },
+      "featureBlocks": [
+        { "title": "Web applications", "description": "Business platforms, internal tools, dashboards, and customer-facing portals.", "icon": "i-lucide-monitor" },
+        { "title": "Mobile applications", "description": "Field service, employee, and customer apps for iOS and Android.", "icon": "i-lucide-smartphone" },
+        { "title": "Government systems", "description": "Citizen services, internal workflows, and compliance-focused design.", "icon": "i-lucide-landmark" },
+        { "title": "Enterprise platforms", "description": "Multi-module systems supporting complex roles, approvals, and reporting.", "icon": "i-lucide-building-2" },
+        { "title": "Cloud-ready solutions", "description": "Deploy on cloud or hybrid infrastructure with modern DevOps practices.", "icon": "i-lucide-cloud" },
+        { "title": "API-first architecture", "description": "Integrate with ERP, CRM, and third-party services through secure APIs.", "icon": "i-lucide-webhook" }
+      ],
+      "process": {
+        "title": "How we build software",
+        "description": "An agile delivery flow that keeps stakeholders involved and quality embedded throughout.",
+        "steps": [
+          { "title": "Requirements & UX", "description": "Define scope, user journeys, and acceptance criteria with stakeholders." },
+          { "title": "Architecture & planning", "description": "Design technical foundations, integrations, and sprint roadmap." },
+          { "title": "Iterative development", "description": "Build features in sprints with regular demos and feedback loops." },
+          { "title": "Testing & hardening", "description": "Functional, security, and performance validation before release." },
+          { "title": "Deployment", "description": "Production rollout with monitoring, documentation, and handover." },
+          { "title": "Support & evolution", "description": "Enhancements, fixes, and roadmap planning after launch." }
+        ]
+      },
+      "benefits": {
+        "title": "Engineering standards you can trust",
+        "description": "Professional delivery practices inspired by enterprise product development.",
+        "items": [
+          { "title": "Performance", "description": "Optimized stacks and architectures for responsive user experiences.", "icon": "i-lucide-zap" },
+          { "title": "User-centered design", "description": "Interfaces that are clear, accessible, and aligned with real workflows.", "icon": "i-lucide-palette" },
+          { "title": "Quality testing", "description": "Multi-layer QA including functional, regression, and UAT support.", "icon": "i-lucide-bug" },
+          { "title": "Security", "description": "Secure coding practices, authentication, and data protection by design.", "icon": "i-lucide-shield" },
+          { "title": "Maintainability", "description": "Clean codebases, documentation, and modular design for future change.", "icon": "i-lucide-wrench" },
+          { "title": "Dedicated support", "description": "Responsive maintenance and enhancement after go-live.", "icon": "i-lucide-headphones" }
+        ]
+      },
+      "cta": {
+        "title": "Have an application to build?",
+        "description": "Share your requirements — we'll help you scope, plan, and deliver a solution that fits."
+      },
+      "features": ["Web Applications", "Mobile Applications", "Government Systems", "Enterprise Platforms", "Cloud Solutions"]
+    },
+    "integration": {
+      "title": "System Integration",
+      "eyebrow": "Connected ecosystems",
+      "heroTagline": "Connect systems with secure, reliable data flow",
+      "mockupLabel": "System integration map",
+      "shortDescription": "Secure APIs and integration layers that unify data across your technology landscape.",
+      "description": "Connecting business systems through secure APIs and integration technologies for reliable, auditable data flow.",
+      "overview": {
+        "title": "Make your systems work as one",
+        "p1": "Disconnected applications create duplicate data, manual reconciliation, and blind spots in decision-making. Integration connects ERP, CRM, legacy systems, and cloud services into a coherent ecosystem.",
+        "p2": "NextFusion designs integration architectures, builds APIs and middleware, and implements synchronization patterns that respect security, performance, and operational governance — so teams trust the data they use every day.",
+        "highlight": "We integrate with intent — every connection has a clear business purpose, owner, and monitoring plan."
+      },
+      "featureBlocks": [
+        { "title": "Integration architecture", "description": "Target-state diagrams, patterns, and governance for enterprise connectivity.", "icon": "i-lucide-network" },
+        { "title": "API development", "description": "RESTful and event-driven APIs with authentication and versioning.", "icon": "i-lucide-webhook" },
+        { "title": "Middleware & ESB", "description": "Message routing, transformation, and orchestration between systems.", "icon": "i-lucide-arrow-left-right" },
+        { "title": "Legacy connectivity", "description": "Bridge older systems without risky big-bang replacements.", "icon": "i-lucide-cable" },
+        { "title": "Data synchronization", "description": "Reliable sync, validation rules, and conflict resolution strategies.", "icon": "i-lucide-database" },
+        { "title": "Monitoring & ops", "description": "Dashboards, alerts, and error handling for integration health.", "icon": "i-lucide-activity" }
+      ],
+      "process": {
+        "title": "How integration projects work",
+        "description": "A methodical approach from landscape assessment to production monitoring.",
+        "steps": [
+          { "title": "Landscape assessment", "description": "Inventory systems, data flows, and integration pain points." },
+          { "title": "Architecture design", "description": "Define patterns, security model, and interface contracts." },
+          { "title": "Build & connect", "description": "Develop APIs, adapters, and middleware components." },
+          { "title": "Data validation", "description": "Test mappings, edge cases, and reconciliation scenarios." },
+          { "title": "Go-live & cutover", "description": "Controlled rollout with rollback plans and hypercare." },
+          { "title": "Operate & improve", "description": "Monitor throughput, fix issues, and extend connectivity." }
+        ]
+      },
+      "benefits": {
+        "title": "Reliable, secure integrations",
+        "description": "Integration delivered with the same rigor as core application development.",
+        "items": [
+          { "title": "Performance", "description": "Efficient data exchange designed for volume and latency requirements.", "icon": "i-lucide-zap" },
+          { "title": "Data accuracy", "description": "Validation and reconciliation to keep systems aligned.", "icon": "i-lucide-check-circle" },
+          { "title": "Security", "description": "Authentication, encryption, and least-privilege access patterns.", "icon": "i-lucide-lock" },
+          { "title": "Scalability", "description": "Architectures that support new endpoints and growing traffic.", "icon": "i-lucide-trending-up" },
+          { "title": "Observability", "description": "Logging and monitoring so issues are detected before users are impacted.", "icon": "i-lucide-radar" },
+          { "title": "Maintainability", "description": "Documented interfaces and support processes for long-term operations.", "icon": "i-lucide-file-cog" }
+        ]
+      },
+      "cta": {
+        "title": "Need to connect your systems?",
+        "description": "Tell us about your landscape — we'll propose a secure, pragmatic integration approach."
+      },
+      "features": ["Integration architecture and API strategy", "Middleware and event-driven integrations", "Legacy system connectivity", "Data synchronization and validation", "Monitoring and error handling"]
+    },
+    "businessIntelligence": {
+      "title": "Business Intelligence",
+      "eyebrow": "Data & insights",
+      "heroTagline": "Turn operational data into trusted decisions",
+      "mockupLabel": "Analytics & reporting dashboard",
+      "shortDescription": "Dashboards, KPIs, and analytics that turn operational data into decisions.",
+      "description": "Transforming business data into actionable insights through interactive dashboards and analytical reporting.",
+      "overview": {
+        "title": "From data to decisions",
+        "p1": "Organizations collect vast amounts of operational data — but value appears only when metrics are defined, data is trustworthy, and insights reach the right people at the right time.",
+        "p2": "NextFusion helps teams design KPI frameworks, build executive and operational dashboards, and enable self-service analytics — connecting ERP, CRM, and line-of-business systems into a coherent reporting layer.",
+        "highlight": "We make analytics practical — focused on metrics that drive action, not dashboards nobody uses."
+      },
+      "featureBlocks": [
+        { "title": "Executive dashboards", "description": "Leadership views for financial, operational, and program performance.", "icon": "i-lucide-layout-dashboard" },
+        { "title": "Operational reporting", "description": "Department-level metrics, drill-downs, and exception alerts.", "icon": "i-lucide-clipboard-list" },
+        { "title": "KPI frameworks", "description": "Define, document, and govern metrics aligned with strategy.", "icon": "i-lucide-target" },
+        { "title": "Data modeling", "description": "Warehouse structures, dimensions, and measures for reliable analytics.", "icon": "i-lucide-database" },
+        { "title": "Self-service analytics", "description": "Empower analysts with governed datasets and exploration tools.", "icon": "i-lucide-search" },
+        { "title": "Advanced reporting", "description": "Scheduled reports, exports, and narrative summaries for stakeholders.", "icon": "i-lucide-file-bar-chart" }
+      ],
+      "process": {
+        "title": "How analytics engagements work",
+        "description": "A clear path from messy data to trusted insights your teams will use.",
+        "steps": [
+          { "title": "Metrics discovery", "description": "Identify questions, KPIs, and audiences for reporting." },
+          { "title": "Data assessment", "description": "Review sources, quality gaps, and integration requirements." },
+          { "title": "Model & design", "description": "Build data models and dashboard wireframes with stakeholders." },
+          { "title": "Implementation", "description": "Develop dashboards, reports, and data pipelines." },
+          { "title": "Validation", "description": "Reconcile figures with source systems and business owners." },
+          { "title": "Enablement", "description": "Train users and establish governance for ongoing analytics." }
+        ]
+      },
+      "benefits": {
+        "title": "Analytics you can rely on",
+        "description": "Insight platforms built for accuracy, adoption, and growth.",
+        "items": [
+          { "title": "Performance", "description": "Optimized queries and models for responsive dashboard experiences.", "icon": "i-lucide-zap" },
+          { "title": "Data trust", "description": "Reconciliation, documentation, and ownership for every metric.", "icon": "i-lucide-badge-check" },
+          { "title": "Quality", "description": "Testing and validation so numbers match operational reality.", "icon": "i-lucide-shield-check" },
+          { "title": "Security", "description": "Row-level security and role-based access to sensitive data.", "icon": "i-lucide-lock" },
+          { "title": "Scalability", "description": "Architectures that absorb new sources and growing data volume.", "icon": "i-lucide-trending-up" },
+          { "title": "Continuous refinement", "description": "Iterate dashboards as business questions evolve.", "icon": "i-lucide-refresh-cw" }
+        ]
+      },
+      "cta": {
+        "title": "Ready to unlock insights from your data?",
+        "description": "Let's identify the metrics that matter and build reporting your teams will actually use."
+      },
+      "features": ["Executive and operational dashboards", "KPI and metric framework definition", "Self-service analytics enablement", "Data quality and governance", "Advanced reporting"]
+    },
+    "ecommerce": {
+      "title": "E-Commerce Solutions",
+      "eyebrow": "Digital commerce",
+      "heroTagline": "Launch and scale online sales with confidence",
+      "mockupLabel": "E-commerce performance dashboard",
+      "shortDescription": "Online stores, marketplaces, and omnichannel platforms connected to inventory and fulfillment.",
+      "description": "Design and delivery of e-commerce platforms that connect catalog, checkout, payments, and operations into one scalable digital sales channel.",
+      "overview": {
+        "title": "Commerce that connects to how you operate",
+        "p1": "A successful online store is more than a storefront — it needs reliable catalog management, secure checkout, fulfillment visibility, and integration with ERP, POS, and logistics systems.",
+        "p2": "NextFusion builds B2C and B2B e-commerce solutions, custom marketplaces, and omnichannel experiences — from UX and platform selection through payment integration, ERP sync, and post-launch optimization.",
+        "highlight": "We deliver commerce as part of your operating model — not an isolated website disconnected from inventory and finance."
+      },
+      "featureBlocks": [
+        { "title": "Online storefronts", "description": "Responsive B2C and B2B shops with catalog, search, and conversion-focused UX.", "icon": "i-lucide-store" },
+        { "title": "Marketplace platforms", "description": "Multi-vendor catalogs, vendor onboarding, commissions, and order routing.", "icon": "i-lucide-layout-grid" },
+        { "title": "Product & catalog management", "description": "Categories, variants, pricing rules, promotions, and rich product content.", "icon": "i-lucide-package" },
+        { "title": "Checkout & payments", "description": "Cart flows, gateways, invoicing options, and secure payment orchestration.", "icon": "i-lucide-credit-card" },
+        { "title": "ERP & inventory sync", "description": "Real-time stock, orders, and customer data aligned with back-office systems.", "icon": "i-lucide-plug" },
+        { "title": "Fulfillment & logistics", "description": "Shipping rules, carrier integration, tracking, and returns workflows.", "icon": "i-lucide-truck" }
+      ],
+      "process": {
+        "title": "How e-commerce projects work",
+        "description": "A phased approach from commerce strategy to launch and continuous growth.",
+        "steps": [
+          { "title": "Commerce discovery", "description": "Define channels, catalog model, integrations, and success metrics." },
+          { "title": "UX & platform design", "description": "Wireframes, journeys, and technical architecture for storefront and admin." },
+          { "title": "Build & integrate", "description": "Develop storefront, admin tools, payments, and ERP/POS connections." },
+          { "title": "Catalog & content setup", "description": "Load products, configure pricing, shipping, and merchandising rules." },
+          { "title": "Testing & launch", "description": "End-to-end order flows, performance checks, and controlled go-live." },
+          { "title": "Growth & optimization", "description": "Analytics, conversion improvements, and feature enhancements." }
+        ]
+      },
+      "benefits": {
+        "title": "Commerce built for scale and trust",
+        "description": "E-commerce delivery with enterprise-grade reliability and operational alignment.",
+        "items": [
+          { "title": "Performance", "description": "Fast catalog browsing and checkout optimized for mobile and peak traffic.", "icon": "i-lucide-zap" },
+          { "title": "Conversion-focused UX", "description": "Clear journeys from discovery to purchase with minimal friction.", "icon": "i-lucide-mouse-pointer-click" },
+          { "title": "Secure transactions", "description": "Payment security, access controls, and compliance-aware implementations.", "icon": "i-lucide-shield-check" },
+          { "title": "Operational sync", "description": "Orders and inventory reflected accurately across commerce and ERP.", "icon": "i-lucide-refresh-cw" },
+          { "title": "Scalable architecture", "description": "Platforms ready for new markets, catalogs, and sales channels.", "icon": "i-lucide-trending-up" },
+          { "title": "Ongoing support", "description": "Maintenance, enhancements, and merchandising support after launch.", "icon": "i-lucide-headphones" }
+        ]
+      },
+      "cta": {
+        "title": "Ready to launch or modernize your online store?",
+        "description": "Tell us about your catalog, channels, and systems — we'll propose a practical commerce roadmap."
+      },
+      "features": ["B2C and B2B online stores", "Marketplace and multi-vendor platforms", "Payment gateway integration", "ERP and inventory synchronization", "Omnichannel commerce readiness"]
+    }
+  },
+  "consulting": {
+    "title": "Consulting Services",
+    "subtitle": "Professional consulting services that help organizations improve performance and maximize technology investments.",
+    "intro": "We provide strategic and technical consulting services that help organizations improve performance and maximize technology investments.",
+    "highlights": {
+      "areas": { "value": "9", "label": "Consulting practice areas" },
+      "models": { "value": "3", "label": "Flexible engagement models" },
+      "delivery": { "value": "Agile", "label": "Iterative delivery approach" },
+      "support": { "value": "Long-term", "label": "Advisory & post-go-live support" }
+    },
+    "overview": {
+      "title": "Strategic advisory with hands-on delivery",
+      "description": "Our consulting practice bridges business strategy and technology execution — helping leadership teams define direction, structure programs, and adopt solutions with confidence."
+    },
+    "quote": {
+      "text": "We combine consulting discipline with implementation experience, so recommendations are practical, measurable, and ready for delivery."
+    },
+    "servicesSection": {
+      "title": "Practice areas",
+      "description": "Nine specialized capabilities covering analysis, strategy, governance, architecture, and change management."
+    },
+    "why": {
+      "title": "Why consult with NextFusion?",
+      "description": "A partner that understands both business context and enterprise technology delivery."
+    },
+    "methodology": {
+      "title": "Structured delivery methodology",
+      "description": "Every consulting engagement follows a transparent, phased approach aligned with international best practices.",
+      "cta": "View our process"
+    },
+    "related": {
+      "title": "From strategy to implementation",
+      "description": "Our consulting services connect directly to delivery teams, product capabilities, and long-term support."
+    },
+    "businessAnalysis": { "title": "Business Analysis", "description": "Understanding business needs and translating them into digital solutions.", "icon": "i-lucide-search" },
+    "erpConsulting": { "title": "ERP Consulting", "description": "ERP implementation planning, business process mapping, and system optimization.", "icon": "i-lucide-database" },
+    "digitalTransformation": { "title": "Digital Transformation Consulting", "description": "Building digital transformation strategies and implementation roadmaps.", "icon": "i-lucide-layers" },
+    "bpr": { "title": "Business Process Reengineering (BPR)", "description": "Analyzing and redesigning business processes for greater efficiency.", "icon": "i-lucide-git-branch" },
+    "pmo": { "title": "Project Management Office (PMO)", "description": "Project governance, planning, monitoring, and execution support.", "icon": "i-lucide-kanban" },
+    "itStrategy": { "title": "IT Strategy", "description": "Aligning technology initiatives with organizational objectives.", "icon": "i-lucide-compass" },
+    "enterpriseArchitecture": { "title": "Enterprise Architecture", "description": "Designing scalable technology ecosystems that support business growth.", "icon": "i-lucide-network" },
+    "changeManagement": { "title": "Change Management", "description": "Supporting organizations in adopting new technologies and processes successfully.", "icon": "i-lucide-users" },
+    "qaTesting": { "title": "Quality Assurance & Testing", "description": "Planning and executing software QA and User Acceptance Testing (UAT).", "icon": "i-lucide-shield-check" },
+    "cta": { "title": "Need consulting support?", "description": "We offer flexible engagement models — from advisory sprints to ongoing program support." }
+  },
+  "products": {
+    "title": "Our Products",
+    "subtitle": "Integrated enterprise solutions under the NextFlow product suite.",
+    "plannedFeatures": "Planned Features",
+    "alert": { "title": "Products", "description": "Our NextFlow product suite provides integrated enterprise solutions for growing organizations." },
+    "erp": {
+      "name": "NextFlow ERP",
+      "status": "Coming Soon",
+      "description": "Integrated ERP platform designed to manage all enterprise operations.",
+      "longDescription": "NextFlow ERP is an integrated platform designed to manage finance, inventory, procurement, sales, and reporting in one unified system.",
+      "features": ["Financial management", "Inventory and warehouse management", "Procurement and supplier management", "Sales and order management", "Role-based dashboards and reporting"]
+    },
+    "hr": {
+      "name": "NextFlow HR",
+      "status": "In Development",
+      "description": "Human Resource Management System.",
+      "longDescription": "NextFlow HR covers employee profiles, attendance, leave management, and organizational structure.",
+      "features": ["Employee profiles and document management", "Attendance and leave tracking", "Organizational hierarchy management", "Payroll data preparation", "HR reporting and analytics"]
+    },
+    "pos": {
+      "name": "NextFlow POS",
+      "status": "In Development",
+      "description": "Modern Point of Sale System.",
+      "longDescription": "NextFlow POS provides fast checkout, inventory sync, and sales reporting for retail operations.",
+      "features": ["Fast checkout and receipt management", "Product catalog and barcode support", "Multi-branch inventory visibility", "Daily sales and cashier reports", "ERP integration readiness"]
+    },
+    "ecommerce": {
+      "name": "NextFlow Ecommerce",
+      "status": "Coming Soon",
+      "description": "Integrated E-commerce Platform.",
+      "longDescription": "NextFlow Ecommerce connects online sales channels with inventory, fulfillment, and reporting.",
+      "features": ["Product catalog and category management", "Order processing and fulfillment", "Customer account management", "Payment gateway integration readiness", "Unified reporting with ERP"]
+    },
+    "cta": { "title": "Interested in NextFlow?", "description": "Request a demo or contact us to learn more." }
+  },
+  "industries": {
+    "title": "Industries We Serve",
+    "subtitle": "We deliver solutions across multiple sectors.",
+    "intro": "Every industry has unique operational requirements. We adapt our services to fit each sector we work with.",
+    "government": { "name": "Government", "description": "Digital government services and secure system integration.", "icon": "i-lucide-landmark" },
+    "healthcare": { "name": "Healthcare", "description": "Operational systems and data workflows for healthcare providers.", "icon": "i-lucide-heart-pulse" },
+    "education": { "name": "Education", "description": "Administrative and academic support systems for institutions.", "icon": "i-lucide-graduation-cap" },
+    "manufacturing": { "name": "Manufacturing", "description": "ERP, inventory, and production planning for manufacturers.", "icon": "i-lucide-factory" },
+    "retail": { "name": "Retail", "description": "POS, ecommerce, and inventory management for retail.", "icon": "i-lucide-shopping-bag" },
+    "logistics": { "name": "Logistics", "description": "Warehouse and supply chain visibility tools.", "icon": "i-lucide-truck" },
+    "construction": { "name": "Construction", "description": "Project and operations management for construction firms.", "icon": "i-lucide-hard-hat" },
+    "banking": { "name": "Banking", "description": "Secure integration and operational systems for financial services.", "icon": "i-lucide-landmark" },
+    "insurance": { "name": "Insurance", "description": "Policy administration and workflow automation.", "icon": "i-lucide-shield" },
+    "realEstate": { "name": "Real Estate", "description": "Property management and sales operations platforms.", "icon": "i-lucide-building-2" },
+    "hospitality": { "name": "Hospitality", "description": "Reservation, billing, and operational systems.", "icon": "i-lucide-utensils" },
+    "nonProfit": { "name": "Non-Profit Organizations", "description": "Affordable systems for programs, donors, and reporting.", "icon": "i-lucide-hand-heart" },
+    "cta": { "title": "Don't see your industry?", "description": "Contact us to discuss your specific sector and requirements." }
+  },
+  "why": {
+    "erpSpecialists": { "title": "Experienced ERP Specialists", "description": "Specialized expertise in ERP implementation and optimization.", "icon": "i-lucide-layout-grid" },
+    "dtExperts": { "title": "Digital Transformation Experts", "description": "Strategic guidance for modernization and digital initiatives.", "icon": "i-lucide-refresh-cw" },
+    "businessAnalysis": { "title": "Business Analysis Professionals", "description": "Structured discovery of business needs and requirements.", "icon": "i-lucide-search" },
+    "agileDelivery": { "title": "Agile Project Delivery", "description": "Flexible, iterative delivery aligned with business priorities.", "icon": "i-lucide-zap" },
+    "secureScalable": { "title": "Secure & Scalable Solutions", "description": "Enterprise-grade security and architecture built for growth.", "icon": "i-lucide-shield-check" },
+    "cloudReady": { "title": "Cloud-Ready Platforms", "description": "Modern cloud-ready solutions for flexible deployment.", "icon": "i-lucide-cloud" },
+    "longTermSupport": { "title": "Long-Term Technical Support", "description": "Ongoing support beyond project delivery.", "icon": "i-lucide-headphones" },
+    "customerCentric": { "title": "Customer-Centric Approach", "description": "Focused on understanding and achieving client objectives.", "icon": "i-lucide-heart-handshake" }
+  },
+  "process": {
+    "title": "Our Process",
+    "subtitle": "Based on your needs and current project stage, NextFusion can support you at every step — from strategy and analysis through build, launch, and continuous improvement.",
+    "eyebrow": "Delivery methodology",
+    "flow": {
+      "label": "End-to-end delivery journey"
+    },
+    "quote": {
+      "text": "Successful digital transformation starts with understanding business needs before selecting technology — our process is built around that principle."
+    },
+    "highlights": {
+      "phases": { "value": "4", "label": "Core delivery phases" },
+      "transparency": { "value": "8", "label": "Structured methodology steps" },
+      "agile": { "value": "Agile", "label": "Iterative execution model" },
+      "support": { "value": "24/7", "label": "Post-launch support readiness" }
+    },
+    "principles": {
+      "businessFirst": {
+        "title": "Business-first discovery",
+        "description": "Requirements and outcomes are defined before architecture and implementation decisions.",
+        "icon": "i-lucide-target"
+      },
+      "iterative": {
+        "title": "Iterative delivery",
+        "description": "Phased releases with continuous feedback keep scope aligned with priorities.",
+        "icon": "i-lucide-refresh-cw"
+      },
+      "quality": {
+        "title": "Built-in quality",
+        "description": "Testing, validation, and governance are embedded across every phase — not added at the end.",
+        "icon": "i-lucide-shield-check"
+      }
+    },
+    "overview": {
+      "title": "How we define, build, and scale digital solutions",
+      "description": "Our structured delivery methodology combines consulting rigor with agile execution — ensuring every solution aligns with business objectives before technology is selected."
+    },
+    "phases": {
+      "title": "Delivery phases in detail",
+      "description": "Explore how we approach each stage of your project — with clear deliverables, accountability, and measurable outcomes.",
+      "phaseLabel": "Phase",
+      "businessAnalysis": {
+        "title": "Business Analysis",
+        "description": "We identify business needs, analyze processes, and define requirements that align software solutions with organizational objectives and operational realities.",
+        "icon": "i-lucide-file-text",
+        "steps": [
+          { "title": "High-level business requirements", "description": "Define project scope, objectives, and success criteria with stakeholders." },
+          { "title": "Detailed product backlog", "description": "Break down initiatives into prioritized features and actionable deliverables." },
+          { "title": "Process mapping", "description": "Document current workflows, gaps, and improvement opportunities." },
+          { "title": "Wireframes & solution outline", "description": "Create initial solution structures to guide design and development phases." }
+        ]
+      },
+      "solutionDesign": {
+        "title": "Solution Design",
+        "description": "We translate business requirements into intuitive experiences and robust architectures — iterating with your team until the solution is validated and ready to build.",
+        "icon": "i-lucide-pencil-ruler",
+        "steps": [
+          { "title": "Research & discovery", "description": "Study users, market context, and best practices relevant to your domain." },
+          { "title": "Enterprise architecture", "description": "Define system components, integrations, and technical foundations." },
+          { "title": "UX/UI design", "description": "Design interfaces and user flows that are clear, accessible, and on-brand." },
+          { "title": "Prototype validation", "description": "Test prototypes with stakeholders to confirm usability and requirements fit." }
+        ]
+      },
+      "development": {
+        "title": "Software Development",
+        "description": "We design, build, and deploy high-quality software using agile practices — delivering on time, within scope, and with enterprise-grade reliability.",
+        "icon": "i-lucide-code-2",
+        "steps": [
+          { "title": "Technical analysis", "description": "Assess feasibility, risks, constraints, and implementation approach." },
+          { "title": "Architecture & sprint planning", "description": "Plan iterations, define milestones, and align delivery with priorities." },
+          { "title": "Implementation", "description": "Develop, configure, and integrate solution components iteratively." },
+          { "title": "Deployment & go-live", "description": "Release to production with rollout support and operational readiness." }
+        ]
+      },
+      "quality": {
+        "title": "Testing & Quality Assurance",
+        "description": "Our quality process ensures software performance, security, and reliability — minimizing defects and validating readiness before launch.",
+        "icon": "i-lucide-shield-check",
+        "steps": [
+          { "title": "Test planning", "description": "Define scope, approach, tools, and acceptance criteria." },
+          { "title": "Test case design", "description": "Cover functional, integration, and user scenarios comprehensively." },
+          { "title": "Test execution & UAT", "description": "Run tests, coordinate user acceptance, and record outcomes." },
+          { "title": "Defect tracking & regression", "description": "Resolve issues, retest changes, and confirm release readiness." }
+        ]
+      }
+    },
+    "engagement": {
+      "title": "Flexible engagement models",
+      "description": "We adapt how we work with you — whether you need a focused advisory sprint, a dedicated delivery team, or long-term program support.",
+      "items": [
+        { "title": "Advisory & discovery", "description": "Short, focused engagements to assess needs, define scope, and build a practical roadmap.", "icon": "i-lucide-compass" },
+        { "title": "Dedicated delivery team", "description": "A cross-functional team embedded with your stakeholders for end-to-end project execution.", "icon": "i-lucide-users" },
+        { "title": "Managed support", "description": "Ongoing maintenance, enhancements, and optimization after go-live.", "icon": "i-lucide-headphones" }
+      ]
+    },
+    "team": {
+      "title": "Who is on a dedicated team?",
+      "description": "Every engagement is staffed with experienced professionals selected for your project scope, industry context, and delivery goals.",
+      "expertise": {
+        "stat": "Top",
+        "title": "Specialized expertise",
+        "description": "Consultants, analysts, architects, and engineers with deep experience in ERP, digital transformation, and enterprise software."
+      },
+      "flexibility": {
+        "stat": "100%",
+        "title": "Flexible & scalable",
+        "description": "Teams scale with project phases — from discovery through build, launch, and post-go-live support."
+      },
+      "partnership": {
+        "stat": "Long-term",
+        "title": "Partnership mindset",
+        "description": "We focus on lasting relationships — many clients work with us across multiple programs and continuous improvement initiatives."
+      }
+    },
+    "structure": {
+      "title": "Team structure",
+      "description": "A typical NextFusion delivery team brings together the roles needed for smooth execution, clear communication, and high-quality outcomes.",
+      "groups": {
+        "leadership": {
+          "title": "Leadership & alignment",
+          "description": "Roles that define direction, priorities, and stakeholder coordination."
+        },
+        "engineering": {
+          "title": "Engineering & architecture",
+          "description": "Roles responsible for designing and building the solution."
+        },
+        "operations": {
+          "title": "Quality & operations",
+          "description": "Roles ensuring reliability, testing rigor, and deployment readiness."
+        }
+      },
+      "roles": {
+        "projectManager": { "title": "Project Manager", "description": "Oversees planning, delivery, risks, and stakeholder communication.", "icon": "i-lucide-kanban" },
+        "productOwner": { "title": "Product Owner", "description": "Defines priorities and ensures requirements reflect business value.", "icon": "i-lucide-target" },
+        "businessAnalyst": { "title": "Business Analyst", "description": "Bridges business needs and technical solution design.", "icon": "i-lucide-file-search" },
+        "solutionArchitect": { "title": "Solution Architect", "description": "Designs scalable system architecture and integration approach.", "icon": "i-lucide-network" },
+        "backendDeveloper": { "title": "Backend Developer", "description": "Builds APIs, integrations, and server-side application logic.", "icon": "i-lucide-server" },
+        "frontendDeveloper": { "title": "Frontend Developer", "description": "Delivers responsive, accessible user interfaces.", "icon": "i-lucide-monitor" },
+        "qaEngineer": { "title": "QA Engineer", "description": "Plans and executes testing to validate quality and readiness.", "icon": "i-lucide-bug" },
+        "devopsEngineer": { "title": "DevOps Engineer", "description": "Supports deployment pipelines, environments, and reliability.", "icon": "i-lucide-cloud-cog" },
+        "teamLead": { "title": "Technical Lead", "description": "Guides engineering standards, code quality, and team coordination.", "icon": "i-lucide-user-cog" }
+      }
+    },
+    "related": {
+      "title": "Explore our capabilities",
+      "description": "See how our services and consulting offerings map to each phase of your digital transformation program."
+    },
+    "cta": {
+      "title": "Ready to start your project?",
+      "description": "Let's discuss your goals and define a practical path from strategy to delivery."
+    }
+  },
+  "methodology": {
+    "discovery": { "title": "Discovery", "description": "Study and analyze organizational needs and requirements.", "icon": "i-lucide-search" },
+    "businessAnalysis": { "title": "Business Analysis", "description": "Deep analysis of processes, gaps, and objectives.", "icon": "i-lucide-file-text" },
+    "solutionDesign": { "title": "Solution Design", "description": "Architect solutions aligned with business goals.", "icon": "i-lucide-pencil-ruler" },
+    "development": { "title": "Development", "description": "Build and configure using agile practices.", "icon": "i-lucide-code-2" },
+    "testing": { "title": "Testing", "description": "Quality assurance and validation before go-live.", "icon": "i-lucide-bug" },
+    "deployment": { "title": "Deployment", "description": "Execute rollout and go-live support.", "icon": "i-lucide-rocket" },
+    "training": { "title": "Training", "description": "Knowledge transfer and user enablement.", "icon": "i-lucide-graduation-cap" },
+    "support": { "title": "Support & Continuous Improvement", "description": "Ongoing support and optimization after launch.", "icon": "i-lucide-headphones" }
+  },
+  "technologies": {
+    "cloud": "Cloud Computing",
+    "cloudIcon": "i-lucide-cloud",
+    "ai": "Artificial Intelligence",
+    "aiIcon": "i-lucide-brain",
+    "apiIntegration": "API Integration",
+    "apiIntegrationIcon": "i-lucide-webhook",
+    "bi": "Business Intelligence",
+    "biIcon": "i-lucide-bar-chart-3",
+    "dataAnalytics": "Data Analytics",
+    "dataAnalyticsIcon": "i-lucide-chart-line",
+    "enterpriseArchitecture": "Enterprise Architecture",
+    "enterpriseArchitectureIcon": "i-lucide-network",
+    "workflowAutomation": "Workflow Automation",
+    "workflowAutomationIcon": "i-lucide-workflow"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Let's Build Your Digital Future",
+    "eyebrow": "Get in touch",
+    "getInTouch": "Get in Touch",
+    "intro": "Whether you need an ERP system, digital transformation consulting, or a custom software solution, our team is ready to help.",
+    "infoTitle": "Contact information",
+    "locationsTitle": "Our offices",
+    "response": {
+      "title": "Response time",
+      "description": "We typically respond within 1–2 business days."
+    },
+    "steps": {
+      "title": "What happens next",
+      "items": [
+        "We review your message and route it to the right team.",
+        "A consultant reaches out to clarify scope and priorities.",
+        "We propose a practical next step — call, workshop, or proposal."
+      ]
+    },
+    "mapTitle": {
+      "alexandria": "Alexandria office location",
+      "amman": "Amman office location"
+    },
+    "email": "Email",
+    "phone": "Phone",
+    "website": "Website",
+    "egypt": "Egypt",
+    "jordan": "Jordan",
+    "alexandria": "Alexandria",
+    "amman": "Amman",
+    "alexandriaAddress": "Alexandria, Egypt",
+    "ammanAddress": "Amman, Jordan",
+    "egyptOffice": "Egypt Office — Alexandria",
+    "jordanOffice": "Jordan Office — Amman",
+    "egyptPhone": "+20 XX XXX XXXX",
+    "jordanPhone": "+962 XX XXX XXXX",
+    "form": {
+      "title": "Send us a message",
+      "description": "Share a few details about your project or inquiry. Required fields are marked.",
+      "name": "Full Name",
+      "email": "Email",
+      "company": "Company",
+      "phone": "Phone",
+      "subject": "Subject",
+      "message": "Message",
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "you{'@'}company.com",
+      "companyPlaceholder": "Your company",
+      "phonePlaceholder": "+20 ...",
+      "subjectPlaceholder": "Select a topic",
+      "messagePlaceholder": "Tell us about your project, timeline, and goals...",
+      "privacy": "Your information is used only to respond to your inquiry.",
+      "errors": {
+        "name": "Please enter your full name",
+        "email": "Please enter a valid email address",
+        "subject": "Please select a subject",
+        "message": "Please enter at least 20 characters"
+      },
+      "subjects": {
+        "general": "General Inquiry",
+        "demo": "Request a Demo",
+        "erp": "ERP Solutions",
+        "consulting": "Consulting Services",
+        "products": "Product Inquiry",
+        "partnership": "Partnership"
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Empowering Digital Transformation Through Technology.",
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "products": "Products",
+    "locations": "Locations",
+    "motto": "Empowering Digital Transformation",
+    "copyright": "© {year} NextFusion. All rights reserved."
+  }
+}
