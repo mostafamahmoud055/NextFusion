@@ -11,9 +11,10 @@ export function usePageSeo(pageKey) {
   useSeoMeta({
     title,
     description,
-    ogTitle: title,
+    ogTitle: title === 'NextFusion' ? 'NextFusion' : `${title} | NextFusion`,
     ogDescription: description,
     ogImage: '/og-image.svg',
+    ogSiteName: 'NextFusion',
     ogLocale: locale.value === 'ar' ? 'ar_EG' : 'en_US',
     twitterCard: 'summary_large_image'
   })

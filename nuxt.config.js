@@ -25,9 +25,16 @@ export default defineNuxtConfig({
     baseURL: process.env.NUXT_APP_BASE_URL || '/',
     head: {
       title: 'NextFusion',
-      titleTemplate: '%s | NextFusion',
+      titleTemplate: (titleChunk) => {
+        if (!titleChunk || titleChunk === 'NextFusion') return 'NextFusion'
+        return `${titleChunk} | NextFusion`
+      },
       link: [
-        { rel: 'icon', href: '/favicon.ico' }
+        { rel: 'icon', type: 'image/png', href: '/nextfusion-logo.png' },
+        { rel: 'apple-touch-icon', href: '/nextfusion-logo.png' }
+      ],
+      meta: [
+        { name: 'application-name', content: 'NextFusion' }
       ]
     },
     pageTransition: { name: 'page', mode: 'default' },
