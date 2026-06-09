@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center gap-2.5">
+  <div class="flex items-center flex-col gap-1">
     <img
       src="/nextfusion-logo.png"
       alt=""

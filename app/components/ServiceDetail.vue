@@ -14,9 +14,14 @@ const { t } = useI18n()
 const SERVICE_MOCKUPS = {
   erp: 'erp',
   digitalTransformation: 'transformation',
-  softwareDevelopment: 'dashboard',
+  webApplications: 'dashboard',
+  mobileApplications: 'dashboard',
+  governmentSystems: 'dashboard',
+  enterprisePlatforms: 'dashboard',
+  cloudSolutions: 'dashboard',
+  apiFirstArchitecture: 'transformation',
   integration: 'transformation',
-  businessIntelligence: 'analytics',
+  artificialIntelligence: 'analytics',
   ecommerce: 'dashboard'
 }
 
@@ -39,8 +44,6 @@ useRevealGroup(benefitsRef, '.nf-service-benefit')
   <div ref="pageRef">
     <!-- Hero -->
     <ServiceHero
-      :eyebrow="service.eyebrow"
-      :tagline="service.heroTagline"
       :title="service.title"
       :subtitle="service.shortDescription"
       :description="service.description"
@@ -96,6 +99,33 @@ useRevealGroup(benefitsRef, '.nf-service-benefit')
           </p>
         </div>
       </div>
+    </UiContainer>
+
+    <!-- Service capabilities list -->
+    <UiContainer
+      v-if="service.modulesTitle && service.features.length"
+      surface
+    >
+      <h2 class="nf-heading text-2xl mb-8 nf-animate">
+        {{ service.modulesTitle }}:
+      </h2>
+      <ul
+        class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-4"
+        data-reveal-container
+      >
+        <li
+          v-for="(module, idx) in service.features"
+          :key="module"
+          class="nf-animate flex items-center gap-3 nf-glass px-4 py-3.5"
+          :data-reveal="idx % 3 === 1 ? 'fade' : 'fade-up'"
+        >
+          <UIcon
+            name="i-lucide-check"
+            class="size-4 shrink-0 text-nf-cyan"
+          />
+          <span class="text-sm font-medium text-white">{{ module }}</span>
+        </li>
+      </ul>
     </UiContainer>
 
     <!-- Features -->

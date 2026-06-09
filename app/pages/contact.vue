@@ -37,11 +37,11 @@ const officeLocations = computed(() => [
 <template>
   <div ref="pageRef">
     <PageHeader
-      :title="t('contact.title')"
-      :description="t('contact.subtitle')"
+      :title="t('contact.subtitle')"
+      :description="t('contact.intro')"
     />
 
-    <UiContainer extra-class="!pt-0" backdrop="default" surface>
+    <UiContainer extra-class="pt-0" backdrop="default" surface>
       <div class="grid gap-12 lg:grid-cols-5 lg:gap-16">
         <!-- Sidebar -->
         <div class="lg:col-span-2 space-y-10">

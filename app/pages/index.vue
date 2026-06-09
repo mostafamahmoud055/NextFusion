@@ -27,8 +27,6 @@ const pillarIcons = {
   expertise: 'i-lucide-award'
 }
 
-const whyItems = computed(() => whyNextFusion.value.slice(0, 4))
-
 function syncHomeScroll() {
   initHomeSections(route.hash)
 }
@@ -197,7 +195,7 @@ watch(
         />
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
           <div
-            v-for="item in whyItems"
+            v-for="item in whyNextFusion"
             :key="item.title"
             class="nf-card p-6 nf-animate"
           >
@@ -355,19 +353,6 @@ watch(
       </div>
     </section>
 
-    <!-- Technologies -->
-    <section class="nf-section nf-section-layer nf-section-surface--alt px-6">
-      <UiSectionBackdrop variant="default" />
-      <div class="nf-section-content max-w-7xl mx-auto">
-        <UiSectionHeader
-          :title="t('home.technologies.title')"
-          :description="t('home.technologies.description')"
-          align="center"
-        />
-        <TechnologiesSection />
-      </div>
-    </section>
-
     <!-- Industries -->
     <section class="nf-section nf-section-layer nf-section-surface px-6">
       <UiSectionBackdrop variant="services" />
@@ -377,19 +362,11 @@ watch(
           :description="t('home.industries.description')"
           align="center"
         />
-        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 ">
           <IndustryCard
             v-for="industry in industries"
             :key="industry.key"
             :industry="industry"
-          />
-        </div>
-        <div class="mt-10 text-center nf-animate">
-          <UButton
-            :to="localePath('/industries')"
-            :label="t('common.viewAll')"
-            class="nf-btn-ghost text-white"
-            trailing-icon="i-lucide-arrow-right"
           />
         </div>
       </div>

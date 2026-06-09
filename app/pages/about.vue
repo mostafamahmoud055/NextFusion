@@ -21,9 +21,6 @@ useFadeIn(pageRef)
     <UiContainer backdrop="about" surface>
       <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         <div class="nf-animate">
-          <h2 class="nf-heading mb-6">
-            {{ t('about.story.title') }}
-          </h2>
           <div class="space-y-4">
             <p class="text-slate-400 leading-relaxed">
               {{ t('about.story.p1') }}
@@ -33,18 +30,6 @@ useFadeIn(pageRef)
             </p>
             <p class="text-slate-400 leading-relaxed">
               {{ t('about.story.p3') }}
-            </p>
-          </div>
-          <div class="nf-glass p-6 lg:p-8 mt-8">
-            <UIcon
-              name="i-lucide-quote"
-              class="size-6 text-nf-cyan/60 mb-3"
-            />
-            <p class="text-base text-white font-medium leading-relaxed mb-3">
-              {{ company.teamExpertise }}
-            </p>
-            <p class="text-sm text-slate-500">
-              {{ company.tagline }}
             </p>
           </div>
         </div>
@@ -86,9 +71,14 @@ useFadeIn(pageRef)
           <h2 class="text-xl font-semibold text-white mb-4">
             {{ t('about.vision.title') }}
           </h2>
-          <p class="text-slate-400 leading-relaxed">
-            {{ t('about.vision.text') }}
-          </p>
+          <div class="space-y-4">
+            <p class="text-slate-400 leading-relaxed">
+              {{ t('about.vision.p1') }}
+            </p>
+            <p class="text-slate-400 leading-relaxed">
+              {{ t('about.vision.p2') }}
+            </p>
+          </div>
         </div>
 
         <div class="nf-glass p-8 lg:p-10 h-full nf-animate">
@@ -98,9 +88,17 @@ useFadeIn(pageRef)
           <h2 class="text-xl font-semibold text-white mb-4">
             {{ t('about.mission.title') }}
           </h2>
-          <p class="text-slate-400 leading-relaxed">
-            {{ t('about.mission.text') }}
-          </p>
+          <div class="space-y-4">
+            <p class="text-slate-400 leading-relaxed">
+              {{ t('about.mission.p1') }}
+            </p>
+            <p class="text-slate-400 leading-relaxed">
+              {{ t('about.mission.p2') }}
+            </p>
+            <p class="text-slate-400 leading-relaxed">
+              {{ t('about.mission.p3') }}
+            </p>
+          </div>
         </div>
       </div>
     </UiContainer>
@@ -129,30 +127,22 @@ useFadeIn(pageRef)
 
     <!-- Values -->
     <UiContainer>
-      <UiSectionHeader
-        :title="t('about.values.title')"
-        :description="t('about.values.description')"
-      />
-      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <div
+      <h2 class="nf-heading text-2xl mb-8 nf-animate">
+        {{ t('about.values.title') }}
+      </h2>
+      <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-4">
+        <li
           v-for="value in values"
           :key="value.title"
-          class="nf-glass p-6 nf-animate"
+          class="nf-animate flex items-center gap-3 nf-glass px-4 py-3.5"
         >
-          <div class="flex size-11 items-center justify-center rounded-lg bg-white/5 border border-white/8 mb-4">
-            <UIcon
-              :name="value.icon"
-              class="size-5 text-nf-cyan"
-            />
-          </div>
-          <h3 class="font-semibold text-white mb-2">
-            {{ value.title }}
-          </h3>
-          <p class="text-sm text-slate-500 leading-relaxed">
-            {{ value.description }}
-          </p>
-        </div>
-      </div>
+          <UIcon
+            :name="value.icon"
+            class="size-4 shrink-0 text-nf-cyan"
+          />
+          <span class="text-sm font-medium text-white">{{ value.title }}</span>
+        </li>
+      </ul>
     </UiContainer>
 
     <!-- Methodology -->

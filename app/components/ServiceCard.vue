@@ -24,7 +24,10 @@ const { t } = useI18n()
         <h3 class="font-semibold text-white text-lg mb-2 group-hover:text-nf-cyan/80 transition-colors">
           {{ service.title }}
         </h3>
-        <p class="text-slate-500 text-sm leading-relaxed">
+        <p
+          v-if="service.shortDescription"
+          class="text-slate-500 text-sm leading-relaxed"
+        >
           {{ service.shortDescription }}
         </p>
       </div>

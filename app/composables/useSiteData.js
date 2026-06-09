@@ -71,14 +71,19 @@ function resolveFeatureBlocks(rt, messages) {
 const SERVICE_ICONS = {
   erp: 'i-lucide-layout-grid',
   digitalTransformation: 'i-lucide-refresh-cw',
-  softwareDevelopment: 'i-lucide-code-2',
+  webApplications: 'i-lucide-monitor',
+  mobileApplications: 'i-lucide-smartphone',
+  governmentSystems: 'i-lucide-landmark',
+  enterprisePlatforms: 'i-lucide-building-2',
+  cloudSolutions: 'i-lucide-cloud',
+  apiFirstArchitecture: 'i-lucide-webhook',
   integration: 'i-lucide-plug',
-  businessIntelligence: 'i-lucide-bar-chart-3',
+  artificialIntelligence: 'i-lucide-brain',
   ecommerce: 'i-lucide-store'
 }
 
 export function useSiteData() {
-  const { t, tm, rt, locale } = useI18n()
+  const { t, tm, rt, locale, te } = useI18n()
   const localePath = useLocalePath()
 
   const company = computed(() => ({
@@ -104,7 +109,7 @@ export function useSiteData() {
     { label: t('nav.home'), to: localePath({ path: '/', hash: '#home' }), section: 'home' },
     { label: t('nav.services'), to: localePath({ path: '/', hash: '#services' }), section: 'services' },
     { label: t('nav.about'), to: localePath({ path: '/', hash: '#about' }), section: 'about' },
-    { label: t('nav.process'), to: localePath('/process'), section: 'process' },
+    { label: t('nav.process'), to: localePath({ path: '/', hash: '#process' }), section: 'process' },
     { label: t('nav.products'), to: localePath({ path: '/', hash: '#products' }), section: 'products' },
     { label: t('nav.contact'), to: localePath('/contact'), section: 'contact' }
   ]
@@ -120,9 +125,9 @@ export function useSiteData() {
   })
 
   const homeHighlights = computed(() => [
-    { value: '5', label: t('home.highlights.services') },
+    { value: '11', label: t('home.highlights.services') },
     { value: '2', label: t('home.highlights.regions') },
-    { value: '12+', label: t('home.highlights.industries') },
+    { value: '6', label: t('home.highlights.industries') },
     { value: '4', label: t('home.highlights.products') }
   ])
 
@@ -131,9 +136,14 @@ export function useSiteData() {
     return [
     { slug: 'erp', key: 'erp', icon: 'i-lucide-layout-grid', to: localePath('/services/erp') },
     { slug: 'digital-transformation', key: 'digitalTransformation', icon: 'i-lucide-refresh-cw', to: localePath('/services/digital-transformation') },
-    { slug: 'software-development', key: 'softwareDevelopment', icon: 'i-lucide-code-2', to: localePath('/services/software-development') },
+    { slug: 'web-applications', key: 'webApplications', icon: 'i-lucide-monitor', to: localePath('/services/web-applications') },
+    { slug: 'mobile-applications', key: 'mobileApplications', icon: 'i-lucide-smartphone', to: localePath('/services/mobile-applications') },
+    { slug: 'government-systems', key: 'governmentSystems', icon: 'i-lucide-landmark', to: localePath('/services/government-systems') },
+    { slug: 'enterprise-platforms', key: 'enterprisePlatforms', icon: 'i-lucide-building-2', to: localePath('/services/enterprise-platforms') },
+    { slug: 'cloud-solutions', key: 'cloudSolutions', icon: 'i-lucide-cloud', to: localePath('/services/cloud-solutions') },
+    { slug: 'api-first-architecture', key: 'apiFirstArchitecture', icon: 'i-lucide-webhook', to: localePath('/services/api-first-architecture') },
     { slug: 'integration', key: 'integration', icon: 'i-lucide-plug', to: localePath('/services/integration') },
-    { slug: 'business-intelligence', key: 'businessIntelligence', icon: 'i-lucide-bar-chart-3', to: localePath('/services/business-intelligence') },
+    { slug: 'artificial-intelligence', key: 'artificialIntelligence', icon: 'i-lucide-brain', to: localePath('/services/artificial-intelligence') },
     { slug: 'ecommerce', key: 'ecommerce', icon: 'i-lucide-store', to: localePath('/services/ecommerce') }
   ].map(s => ({
     ...s,
@@ -162,8 +172,7 @@ export function useSiteData() {
 
   const industries = computed(() => {
     const keys = [
-      'government', 'healthcare', 'education', 'manufacturing', 'retail', 'logistics',
-      'construction', 'banking', 'insurance', 'realEstate', 'hospitality', 'nonProfit'
+      'government', 'healthcare', 'education', 'manufacturing', 'retail', 'nonProfit'
     ]
     return keys.map(key => ({
       key,
@@ -175,8 +184,7 @@ export function useSiteData() {
 
   const consultingServices = computed(() => {
     const keys = [
-      'businessAnalysis', 'erpConsulting', 'digitalTransformation', 'bpr', 'pmo',
-      'itStrategy', 'enterpriseArchitecture', 'changeManagement', 'qaTesting'
+      'businessAnalysis', 'erpConsulting', 'digitalTransformation', 'bpr', 'pmo', 'qaTesting'
     ]
     return keys.map(key => ({
       key,
@@ -356,6 +364,7 @@ export function useSiteData() {
         description: t(`${base}.cta.description`) || t('home.cta.description')
       },
       features: resolveList(rt, tm(`${base}.features`)),
+      modulesTitle: te(`${base}.modulesTitle`) ? t(`${base}.modulesTitle`) : null,
       sections: resolveSections(rt, tm(`${base}.sections`))
     }
   }

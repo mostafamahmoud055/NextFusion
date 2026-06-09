@@ -41,12 +41,6 @@ async function onNavClick(link, event) {
 
   event?.preventDefault()
   mobileOpen.value = false
-
-  if (link.section === 'process') {
-    await navigateTo(link.to)
-    return
-  }
-
   await navigateToHomeSection(link.section)
 }
 
@@ -127,7 +121,7 @@ onUnmounted(() => {
 
         <div class="flex items-center gap-3">
           <div
-            class="hidden sm:flex items-center rounded-md border border-white/8 bg-white/[0.03] p-0.5"
+            class="flex items-center rounded-md border border-white/8 bg-white/[0.03] p-0.5"
             role="group"
             :aria-label="t('common.language')"
           >
@@ -180,6 +174,27 @@ onUnmounted(() => {
         >
           {{ link.label }}
         </NuxtLink>
+
+        <div
+          class="flex items-center gap-2 px-4 pt-3 mt-2 border-t border-white/8"
+          role="group"
+          :aria-label="t('common.language')"
+        >
+          <button
+            v-for="loc in availableLocales"
+            :key="loc.code"
+            type="button"
+            :class="[
+              'flex-1 px-3 py-2 text-sm font-semibold rounded-lg transition-colors',
+              locale === loc.code ? 'bg-nf-cyan/10 text-nf-cyan-bright border border-nf-cyan/20' : 'text-slate-400 hover:text-white border border-white/8'
+            ]"
+            :aria-label="localeAriaLabel(loc)"
+            :aria-pressed="locale === loc.code"
+            @click="switchLocale(loc.code); mobileOpen = false"
+          >
+            {{ localeLabel(loc.code) }}
+          </button>
+        </div>
       </div>
     </div>
   </header>
