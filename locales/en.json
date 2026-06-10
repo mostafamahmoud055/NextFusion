@@ -6,7 +6,6 @@
     "process": "Process",
     "consulting": "Consulting",
     "products": "Products",
-    "industries": "Industries",
     "contact": "Contact"
   },
   "common": {
@@ -15,8 +14,6 @@
     "contactUs": "Contact Us",
     "requestDemo": "Request a Demo",
     "getInTouch": "Get in touch",
-    "comingSoon": "Coming Soon",
-    "inDevelopment": "In Development",
     "sendMessage": "Send Message",
     "messageSent": "Message sent",
     "messageSentDesc": "Thank you for reaching out. We will get back to you shortly.",
@@ -119,10 +116,6 @@
       "title": "NextFlow E-Commerce",
       "description": "Integrated E-commerce Platform."
     },
-    "industries": {
-      "title": "Industries",
-      "description": "Digital transformation and ERP expertise across government, healthcare, education, manufacturing, and more."
-    },
     "contact": {
       "title": "Contact Us",
       "description": "Contact NextFusion — info{'@'}nextfusion.com. Offices in Alexandria, Egypt and Amman, Jordan."
@@ -134,8 +127,6 @@
   },
   "home": {
     "hero": {
-      "badge": "Digital Transformation · ERP · Software",
-      "tagline": "Enterprise consulting & technology delivery",
       "title": "Empowering Businesses Through Digital Innovation",
       "description": "We help organizations accelerate their digital transformation journey through intelligent software solutions, enterprise systems, and professional consulting services.",
       "ctaExplore": "Explore services",
@@ -148,14 +139,7 @@
       "cta": "View consulting services"
     },
     "about": {
-      "title": "About NextFusion",
-      "description": "Specialized digital transformation and technology consulting for growing organizations.",
-      "cta": "Learn about us",
       "mockupLabel": "Analytics & BI dashboard"
-    },
-    "services": {
-      "title": "Our Services",
-      "description": "End-to-end capabilities from strategy through implementation."
     },
     "products": {
       "title": "Our Products",
@@ -174,15 +158,6 @@
       "description": "Our delivery approach follows international best practices.",
       "cta": "View our process",
       "mockupLabel": "Digital transformation roadmap"
-    },
-    "technologies": {
-      "title": "Our Technology",
-      "description": "Modern technologies for building reliable digital solutions."
-    },
-    "partners": {
-      "title": "Partners & Clients",
-      "description": "Trusted by organizations seeking reliable digital transformation solutions.",
-      "note": "Client and partner logos will be added here when available."
     },
     "global": {
       "title": "We serve across the region",
@@ -214,7 +189,6 @@
       }
     },
     "highlights": {
-      "title": "NextFusion at a glance",
       "services": "Core services",
       "regions": "Regional offices",
       "industries": "Industries served",
@@ -222,14 +196,12 @@
     },
     "cta": {
       "title": "Ready to start your project?",
-      "subtitle": "Let's get to work.",
       "description": "Whether you need an ERP system, digital transformation consulting, or a custom software solution, our team is ready to help."
     }
   },
   "about": {
     "title": "About Us",
     "subtitle": "NextFusion is a specialized digital transformation and technology consulting company that helps public and private sector organizations enhance their performance and operational efficiency.",
-    "eyebrow": "Who we are",
     "presence": {
       "title": "Regional presence",
       "description": "We work with organizations across Egypt, Jordan, and the wider MENA region."
@@ -300,7 +272,6 @@
     "title": "Our Services",
     "subtitle": "Comprehensive capabilities to help you plan, build, and optimize your technology landscape.",
     "intro": "From ERP and digital transformation to web and mobile applications, integration, artificial intelligence, and e-commerce — we deliver structured engagements built around business outcomes, not technology for its own sake.",
-    "keyCapabilities": "Key Capabilities",
     "detail": {
       "overviewNote": "We align every engagement with your business objectives before recommending technology.",
       "executionTitle": "Project execution by experienced product builders",
@@ -1699,10 +1670,6 @@
       "description": "Every consulting engagement follows a transparent, phased approach aligned with international best practices.",
       "cta": "View our process"
     },
-    "related": {
-      "title": "From strategy to implementation",
-      "description": "Our consulting services connect directly to delivery teams, product capabilities, and long-term support."
-    },
     "businessAnalysis": {
       "title": "Business Analysis",
       "description": "Understanding business needs and translating them into digital solutions.",
@@ -1804,9 +1771,6 @@
     }
   },
   "industries": {
-    "title": "Industries We Serve",
-    "subtitle": "We deliver solutions across multiple sectors.",
-    "intro": "Every industry has unique operational requirements. We adapt our services to fit each sector we work with.",
     "government": {
       "name": "Government",
       "description": "Digital government services and secure system integration.",
@@ -1836,10 +1800,6 @@
       "name": "Non-Profit Organizations",
       "description": "Affordable systems for programs, donors, and reporting.",
       "icon": "i-lucide-hand-heart"
-    },
-    "cta": {
-      "title": "Don't see your industry?",
-      "description": "Contact us to discuss your specific sector and requirements."
     }
   },
   "why": {
@@ -2186,26 +2146,8 @@
       "icon": "i-lucide-headphones"
     }
   },
-  "technologies": {
-    "cloud": "Cloud Computing",
-    "cloudIcon": "i-lucide-cloud",
-    "ai": "Artificial Intelligence",
-    "aiIcon": "i-lucide-brain",
-    "apiIntegration": "API Integration",
-    "apiIntegrationIcon": "i-lucide-webhook",
-    "bi": "Business Intelligence",
-    "biIcon": "i-lucide-bar-chart-3",
-    "dataAnalytics": "Data Analytics",
-    "dataAnalyticsIcon": "i-lucide-chart-line",
-    "enterpriseArchitecture": "Enterprise Architecture",
-    "enterpriseArchitectureIcon": "i-lucide-network",
-    "workflowAutomation": "Workflow Automation",
-    "workflowAutomationIcon": "i-lucide-workflow"
-  },
   "contact": {
-    "title": "Contact Us",
     "subtitle": "Let's Build Your Digital Future",
-    "eyebrow": "Get in touch",
     "getInTouch": "Get in Touch",
     "intro": "Whether you need an ERP system, digital transformation consulting, or a custom software solution, our team is ready to help.",
     "infoTitle": "Contact information",
@@ -2227,7 +2169,6 @@
       "amman": "Amman office location"
     },
     "email": "Email",
-    "phone": "Phone",
     "website": "Website",
     "egypt": "Egypt",
     "jordan": "Jordan",
@@ -2276,7 +2217,6 @@
     "quickLinks": "Quick Links",
     "services": "Services",
     "products": "Products",
-    "locations": "Locations",
     "motto": "Empowering Digital Transformation",
     "copyright": "© {year} NextFusion. All rights reserved."
   }

@@ -7,7 +7,6 @@ const {
   products,
   industries,
   homePillars,
-  homeHighlights,
   whyNextFusion,
   company,
   localePath
@@ -93,27 +92,6 @@ watch(
             variant="dashboard"
             :label="t('home.hero.mockupLabel')"
           />
-        </div>
-      </div>
-    </section>
-
-    <!-- Highlights -->
-    <section class="nf-section nf-section-layer nf-section-surface px-6 !py-12 lg:!py-14">
-      <UiSectionBackdrop variant="stats" />
-      <div class="nf-section-content max-w-7xl mx-auto">
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
-          <div
-            v-for="item in homeHighlights"
-            :key="item.label"
-            class="nf-stat-card nf-animate"
-          >
-            <div class="nf-stat-value text-nf-cyan/90 mb-2">
-              {{ item.value }}
-            </div>
-            <div class="text-sm text-slate-400">
-              {{ item.label }}
-            </div>
-          </div>
         </div>
       </div>
     </section>

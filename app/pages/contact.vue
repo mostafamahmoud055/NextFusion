@@ -18,18 +18,18 @@ const contactSteps = computed(() => {
 
 const officeLocations = computed(() => [
   {
-    key: 'alexandria',
-    title: t('contact.egyptOffice'),
-    address: company.value.locations[0]?.address,
-    mapSrc: 'https://maps.google.com/maps?q=Alexandria,Egypt&output=embed',
-    mapTitle: t('contact.mapTitle.alexandria')
-  },
-  {
     key: 'amman',
     title: t('contact.jordanOffice'),
     address: company.value.locations[1]?.address,
     mapSrc: 'https://maps.google.com/maps?q=Amman,Jordan&output=embed',
     mapTitle: t('contact.mapTitle.amman')
+  },
+  {
+    key: 'alexandria',
+    title: t('contact.egyptOffice'),
+    address: company.value.locations[0]?.address,
+    mapSrc: 'https://maps.google.com/maps?q=Alexandria,Egypt&output=embed',
+    mapTitle: t('contact.mapTitle.alexandria')
   }
 ])
 </script>

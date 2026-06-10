@@ -98,8 +98,8 @@ export function useSiteData() {
       { label: t('contact.egypt'), number: t('contact.egyptPhone') }
     ],
     locations: [
-      { city: t('contact.alexandria'), country: t('contact.egypt'), address: t('contact.alexandriaAddress') },
-      { city: t('contact.amman'), country: t('contact.jordan'), address: t('contact.ammanAddress') }
+      { city: t('contact.amman'), country: t('contact.jordan'), address: t('contact.ammanAddress') },
+      { city: t('contact.alexandria'), country: t('contact.egypt'), address: t('contact.alexandriaAddress') }
     ]
   }))
 
@@ -123,13 +123,6 @@ export function useSiteData() {
       description: t(`home.team.pillars.${key}.description`)
     }))
   })
-
-  const homeHighlights = computed(() => [
-    { value: '11', label: t('home.highlights.services') },
-    { value: '2', label: t('home.highlights.regions') },
-    { value: '6', label: t('home.highlights.industries') },
-    { value: '4', label: t('home.highlights.products') }
-  ])
 
   const services = computed(() => {
     void locale.value
@@ -388,7 +381,6 @@ export function useSiteData() {
     company,
     navLinks,
     homePillars,
-    homeHighlights,
     featuredServices,
     services,
     products,

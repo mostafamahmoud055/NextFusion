@@ -162,6 +162,7 @@ export function useActiveSection() {
   const pathSections = {
     services: '/services',
     about: '/about',
+    process: '/process',
     products: '/products',
     contact: '/contact'
   }
