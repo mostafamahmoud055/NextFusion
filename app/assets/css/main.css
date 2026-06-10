@@ -410,7 +410,6 @@ body {
   font-size: clamp(1.0625rem, 2vw, 1.1875rem);
   color: #94a3b8;
   line-height: 1.75;
-  max-width: 42rem;
 }
 
 .nf-eyebrow {
