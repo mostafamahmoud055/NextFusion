@@ -2,31 +2,6 @@ import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useLocalePath } from '#i18n'
 
-export function usePageSeo(pageKey) {
-  const { t, locale } = useI18n()
-
-  const title = t(`seo.${pageKey}.title`)
-  const description = t(`seo.${pageKey}.description`)
-
-  useSeoMeta({
-    title,
-    description,
-    ogTitle: title === 'NextFusion' ? 'NextFusion' : `${title} | NextFusion`,
-    ogDescription: description,
-    ogImage: '/og-image.svg',
-    ogSiteName: 'NextFusion',
-    ogLocale: locale.value === 'ar' ? 'ar_EG' : 'en_US',
-    twitterCard: 'summary_large_image'
-  })
-
-  useHead({
-    htmlAttrs: {
-      lang: locale.value,
-      dir: locale.value === 'ar' ? 'rtl' : 'ltr'
-    }
-  })
-}
-
 function resolveMessage(rt, message) {
   if (typeof message === 'string') return message
   if (message == null) return ''

@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+const appBaseURL = process.env.NUXT_APP_BASE_URL || '/'
+
 export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
@@ -7,6 +9,12 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@vueuse/nuxt'
   ],
+
+  runtimeConfig: {
+    public: {
+      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://nextfusion.com'
+    }
+  },
 
   devtools: {
     enabled: true
@@ -22,7 +30,7 @@ export default defineNuxtConfig({
   },
 
   app: {
-    baseURL: process.env.NUXT_APP_BASE_URL || '/',
+    baseURL: appBaseURL,
     head: {
       title: 'NextFusion',
       titleTemplate: (titleChunk) => {
@@ -30,11 +38,14 @@ export default defineNuxtConfig({
         return `${titleChunk} | NextFusion`
       },
       link: [
-        { rel: 'icon', type: 'image/png', href: '/nextfusion-logo.png' },
-        { rel: 'apple-touch-icon', href: '/nextfusion-logo.png' }
+        { rel: 'icon', type: 'image/png', href: `${appBaseURL}nextfusion-logo.png` },
+        { rel: 'apple-touch-icon', href: `${appBaseURL}nextfusion-logo.png` }
       ],
       meta: [
-        { name: 'application-name', content: 'NextFusion' }
+        { name: 'application-name', content: 'NextFusion' },
+        { name: 'author', content: 'NextFusion' },
+        { name: 'theme-color', content: '#0a0f1a' },
+        { name: 'format-detection', content: 'telephone=no' }
       ]
     },
     pageTransition: { name: 'page', mode: 'default' },
@@ -42,6 +53,7 @@ export default defineNuxtConfig({
   },
 
   i18n: {
+    baseUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://nextfusion.com',
     locales: [
       { code: 'en', language: 'en-US', name: 'English', file: 'en.json', dir: 'ltr' },
       { code: 'ar', language: 'ar-EG', name: 'العربية', file: 'ar.json', dir: 'rtl' }
@@ -58,10 +70,25 @@ export default defineNuxtConfig({
       redirectOn: 'root',
       alwaysRedirect: true,
       fallbackLocale: 'en'
+    },
+    // Static hosting (GitHub Pages) cannot run server-side locale redirects at `/`.
+    rootRedirect: {
+      statusCode: 302,
+      path: 'en'
     }
   },
 
+  routeRules: {
+    '/': { redirect: '/en' }
+  },
+
   compatibilityDate: '2025-01-15',
+
+  nitro: {
+    prerender: {
+      routes: ['/', '/sitemap.xml', '/robots.txt']
+    }
+  },
 
   eslint: {
     config: {

@@ -38,91 +38,91 @@
   "seo": {
     "home": {
       "title": "NextFusion",
-      "description": "NextFusion empowers businesses through digital innovation — ERP solutions, software development, and IT consulting."
+      "description": "NextFusion empowers organizations through digital innovation — ERP, digital transformation, custom software, AI, integration, and consulting across Egypt, Jordan, and MENA."
     },
     "about": {
       "title": "About Us",
-      "description": "NextFusion helps public and private sector organizations enhance performance and operational efficiency through strategic consulting, business analysis, and modern digital solutions."
+      "description": "Learn how NextFusion helps public and private sector organizations improve performance with strategic consulting, business analysis, and modern digital solutions."
     },
     "services": {
       "title": "Services",
-      "description": "ERP solutions, digital transformation, custom software, system integration, and e-commerce."
+      "description": "Explore NextFusion services: ERP, digital transformation, web and mobile apps, cloud, AI, API-first architecture, integration, e-commerce, and government systems."
     },
     "servicesErp": {
       "title": "ERP Solutions",
-      "description": "Comprehensive Enterprise Resource Planning solutions integrating all business operations into one unified platform."
+      "description": "Enterprise Resource Planning solutions that unify finance, HR, inventory, procurement, sales, and reporting in one scalable platform."
     },
     "servicesDigitalTransformation": {
       "title": "Digital Transformation",
-      "description": "Helping organizations digitize services and modernize operations through smart technologies."
+      "description": "Digital transformation consulting and delivery — digitize services, automate workflows, and modernize operations with measurable outcomes."
     },
     "servicesWebApplications": {
       "title": "Web Applications",
-      "description": "Custom web platforms, internal tools, dashboards, and customer portals built with modern, secure architectures."
+      "description": "Custom web platforms, internal tools, dashboards, and customer portals built with secure, modern, enterprise-grade architectures."
     },
     "servicesMobileApplications": {
       "title": "Mobile Applications",
-      "description": "iOS and Android apps for field service, employees, and customers with offline support and backend integration."
+      "description": "Native iOS and Android apps for field teams, employees, and customers with offline support and secure backend integration."
     },
     "servicesGovernmentSystems": {
       "title": "Government Systems",
-      "description": "Citizen e-services, internal workflows, and compliance-focused digital systems for the public sector."
+      "description": "Citizen e-services, internal workflows, and compliance-focused digital systems designed for public sector organizations."
     },
     "servicesEnterprisePlatforms": {
       "title": "Enterprise Platforms",
-      "description": "Multi-module enterprise systems with approvals, role-based dashboards, and cross-department reporting."
+      "description": "Multi-module enterprise platforms with approvals, role-based dashboards, and cross-department reporting for complex organizations."
     },
     "servicesCloudSolutions": {
       "title": "Cloud-Ready Solutions",
-      "description": "Cloud and hybrid deployments with DevOps, CI/CD, and scalable infrastructure design."
+      "description": "Cloud and hybrid deployments with DevOps, CI/CD pipelines, and scalable infrastructure designed for growth."
     },
     "servicesApiFirstArchitecture": {
       "title": "API-First Architecture",
-      "description": "Secure API design and integration connecting ERP, CRM, and third-party systems."
+      "description": "Secure API design and integration connecting ERP, CRM, and third-party systems with maintainable, governed interfaces."
     },
     "servicesIntegration": {
       "title": "System Integration",
-      "description": "Connect business systems through secure APIs and modern integration technologies."
+      "description": "Connect ERP, CRM, and line-of-business systems through secure APIs, middleware, and reliable data synchronization."
     },
     "servicesArtificialIntelligence": {
       "title": "Artificial Intelligence",
-      "description": "AI strategy, machine learning, intelligent automation, and AI-powered features integrated into enterprise systems."
+      "description": "AI strategy, machine learning, intelligent automation, and AI-powered features integrated into enterprise business systems."
     },
     "servicesEcommerce": {
       "title": "E-Commerce Solutions",
-      "description": "Online stores, marketplaces, and omnichannel commerce platforms integrated with ERP and fulfillment."
+      "description": "Online stores, marketplaces, and omnichannel commerce platforms integrated with ERP, inventory, and fulfillment."
     },
     "consulting": {
       "title": "Consulting Services",
-      "description": "Business analysis, ERP consulting, digital transformation, BPR, PMO, and quality assurance."
+      "description": "Professional consulting: business analysis, ERP advisory, digital transformation, BPR, PMO, and quality assurance."
     },
     "products": {
       "title": "Products",
-      "description": "NextFlow ERP, HR, POS, and E-Commerce — integrated enterprise solutions."
+      "description": "NextFlow product suite — ERP, HR, POS, and E-Commerce platforms for growing organizations."
     },
     "productsErp": {
       "title": "NextFlow ERP",
-      "description": "Integrated ERP platform designed to manage all enterprise operations."
+      "description": "NextFlow ERP — integrated platform for finance, inventory, procurement, sales, and enterprise reporting."
     },
     "productsHr": {
       "title": "NextFlow HR",
-      "description": "Human Resource Management System."
+      "description": "NextFlow HR — human resource management for payroll, attendance, leave, and employee lifecycle management."
     },
     "productsPos": {
       "title": "NextFlow POS",
-      "description": "Modern Point of Sale System."
+      "description": "NextFlow POS — modern point of sale with inventory sync, payments, and retail reporting."
     },
     "productsEcommerce": {
       "title": "NextFlow E-Commerce",
-      "description": "Integrated E-commerce Platform."
+      "description": "NextFlow E-Commerce — integrated online sales platform connected to inventory, orders, and fulfillment."
     },
     "contact": {
       "title": "Contact Us",
-      "description": "Contact NextFusion — info{'@'}nextfusion.com. Offices in Amman, Jordan and Alexandria, Egypt."
+      "description": "Contact NextFusion for ERP, digital transformation, and software projects. Offices in Alexandria, Egypt and Amman, Jordan."
     },
     "process": {
       "title": "Our Process",
-      "description": "How NextFusion defines, builds, and scales digital solutions — from discovery through deployment and long-term support."
+      "description": "Discover NextFusion delivery methodology — from discovery and design through development, launch, and long-term support."
     }
   },
   "home": {

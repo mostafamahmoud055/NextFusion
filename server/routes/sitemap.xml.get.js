@@ -20,23 +20,56 @@ const routes = [
   '/products/nextflow-hr',
   '/products/nextflow-pos',
   '/products/nextflow-ecommerce',
-  '/industries',
   '/contact'
 ]
 
-export default defineEventHandler((event) => {
-  const baseUrl = 'https://nextfusion.com'
+function escapeXml(value) {
+  return value
+    .replace(/&/g, '&amp;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+}
 
-  const urls = routes.flatMap(path => [
-    { loc: `${baseUrl}/en${path}` },
-    { loc: `${baseUrl}/ar${path}` }
-  ])
+export default defineEventHandler((event) => {
+  const siteRoot = String(process.env.NUXT_PUBLIC_SITE_URL || 'https://nextfusion.com').replace(/\/$/, '')
+  const appBase = String(process.env.NUXT_APP_BASE_URL || '/').replace(/\/$/, '')
+  const prefix = appBase && appBase !== '/' ? appBase : ''
+
+  const urlFor = (locale, path) => {
+    const segment = path ? `/${locale}${path}` : `/${locale}`
+    return `${siteRoot}${prefix}${segment}`.replace(/([^:]\/)\/+/g, '$1')
+  }
+
+  const entries = routes.map((path) => {
+    const en = urlFor('en', path)
+    const ar = urlFor('ar', path)
+    const priority = path === '' ? '1.0' : path.split('/').length <= 2 ? '0.9' : '0.8'
+
+    return `  <url>
+    <loc>${escapeXml(en)}</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="${escapeXml(en)}" />
+    <xhtml:link rel="alternate" hreflang="ar" href="${escapeXml(ar)}" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="${escapeXml(en)}" />
+    <changefreq>${path === '' ? 'weekly' : 'monthly'}</changefreq>
+    <priority>${priority}</priority>
+  </url>
+  <url>
+    <loc>${escapeXml(ar)}</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="${escapeXml(en)}" />
+    <xhtml:link rel="alternate" hreflang="ar" href="${escapeXml(ar)}" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="${escapeXml(en)}" />
+    <changefreq>${path === '' ? 'weekly' : 'monthly'}</changefreq>
+    <priority>${priority}</priority>
+  </url>`
+  })
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.map(u => `  <url><loc>${u.loc}</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>`).join('\n')}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+${entries.join('\n')}
 </urlset>`
 
-  setHeader(event, 'Content-Type', 'application/xml')
+  setHeader(event, 'Content-Type', 'application/xml; charset=utf-8')
   return xml
 })

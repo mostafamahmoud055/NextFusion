@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NextFusion</title>
+    <meta http-equiv="refresh" content="0; url=./en/">
+    <link rel="canonical" href="./en/">
+    <script>
+      ;(function () {
+        var locale = 'en'
+        try {
+          var match = document.cookie.match(/(?:^|; )nf_locale=([^;]+)/)
+          if (match && (match[1] === 'en' || match[1] === 'ar')) {
+            locale = match[1]
+          } else if (navigator.language && navigator.language.toLowerCase().startsWith('ar')) {
+            locale = 'ar'
+          }
+        } catch (_) {}
+        location.replace('./' + locale + '/')
+      })()
+    </script>
+  </head>
+  <body>
+    <p><a href="./en/">Continue to NextFusion</a></p>
+  </body>
+</html>

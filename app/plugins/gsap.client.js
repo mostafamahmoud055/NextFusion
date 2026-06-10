@@ -14,6 +14,14 @@ export default defineNuxtPlugin((nuxtApp) => {
       revealStatic(document)
     }
 
+    // Prevent a permanent blank page if reveal init fails on static hosting.
+    window.setTimeout(() => {
+      const hidden = document.querySelector('html.nf-js:not(.nf-reduced-motion) .nf-animate')
+      if (hidden && getComputedStyle(hidden).opacity === '0') {
+        revealStatic(document)
+      }
+    }, 1500)
+
     // Initial layout after full page load (images, fonts)
     window.addEventListener('load', () => {
       refreshScrollTriggers('window-load')
