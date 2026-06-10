@@ -1,6 +1,4 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-const appBaseURL = process.env.NUXT_APP_BASE_URL || '/'
-
 export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
@@ -30,7 +28,7 @@ export default defineNuxtConfig({
   },
 
   app: {
-    baseURL: appBaseURL,
+    baseURL: process.env.NUXT_APP_BASE_URL || '/',
     head: {
       title: 'NextFusion',
       titleTemplate: (titleChunk) => {
@@ -38,8 +36,8 @@ export default defineNuxtConfig({
         return `${titleChunk} | NextFusion`
       },
       link: [
-        { rel: 'icon', type: 'image/png', href: `${appBaseURL}nextfusion-logo.png` },
-        { rel: 'apple-touch-icon', href: `${appBaseURL}nextfusion-logo.png` }
+        { rel: 'icon', type: 'image/png', href: '/nextfusion-logo.png' },
+        { rel: 'apple-touch-icon', href: '/nextfusion-logo.png' }
       ],
       meta: [
         { name: 'application-name', content: 'NextFusion' },
@@ -70,23 +68,14 @@ export default defineNuxtConfig({
       redirectOn: 'root',
       alwaysRedirect: true,
       fallbackLocale: 'en'
-    },
-    // Static hosting (GitHub Pages) cannot run server-side locale redirects at `/`.
-    rootRedirect: {
-      statusCode: 302,
-      path: 'en'
     }
-  },
-
-  routeRules: {
-    '/': { redirect: '/en' }
   },
 
   compatibilityDate: '2025-01-15',
 
   nitro: {
     prerender: {
-      routes: ['/', '/sitemap.xml', '/robots.txt']
+      routes: ['/sitemap.xml', '/robots.txt']
     }
   },
 
