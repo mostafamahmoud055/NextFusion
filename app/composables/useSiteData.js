@@ -104,6 +104,7 @@ export function useSiteData() {
     return [
     { slug: 'erp', key: 'erp', icon: 'i-lucide-layout-grid', to: localePath('/services/erp') },
     { slug: 'ecommerce', key: 'ecommerce', icon: 'i-lucide-store', to: localePath('/services/ecommerce') },
+    { slug: 'elearning', key: 'elearning', icon: 'i-lucide-book-open', to: localePath('/services/elearning') },
     { slug: 'digital-transformation', key: 'digitalTransformation', icon: 'i-lucide-refresh-cw', to: localePath('/services/digital-transformation') },
     { slug: 'web-applications', key: 'webApplications', icon: 'i-lucide-monitor', to: localePath('/services/web-applications') },
     { slug: 'mobile-applications', key: 'mobileApplications', icon: 'i-lucide-smartphone', to: localePath('/services/mobile-applications') },
