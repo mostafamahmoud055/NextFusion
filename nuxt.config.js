@@ -60,7 +60,7 @@ export default defineNuxtConfig({
     lazy: true,
     restructureDir: false,
     langDir: 'locales',
-    strategy: 'prefix',
+    strategy: 'prefix_except_default',
     vueI18n: './i18n/i18n.config.js',
     detectBrowserLanguage: {
       useCookie: true,
