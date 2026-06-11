@@ -2,7 +2,7 @@ import { refreshScrollTriggers } from '~/utils/gsapScroll'
 
 export default defineNuxtPlugin((nuxtApp) => {
   const pendingScrollRestore = useState('nf-pending-scroll-restore', () => null)
-  const isLocaleSwitch = useState('nf-locale-switch', () => false)
+  const isLocaleSwitch = useState('nf_locale-switch', () => false)
   const { calculateActiveSection, setupSectionObserver, isHomePage } = useActiveSection()
 
   nuxtApp.hook('page:finish', () => {

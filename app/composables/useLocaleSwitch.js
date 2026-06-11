@@ -1,12 +1,12 @@
 import { useI18n } from 'vue-i18n'
 import { useSwitchLocalePath } from '#i18n'
 
-const STORAGE_KEY = 'nf-locale'
+const STORAGE_KEY = 'nf_locale'
 
 export function useLocaleSwitch() {
   const { locale, locales } = useI18n()
   const switchLocalePath = useSwitchLocalePath()
-  const isLocaleSwitch = useState('nf-locale-switch', () => false)
+  const isLocaleSwitch = useState('nf_locale-switch', () => false)
   const pendingScrollRestore = useState('nf-pending-scroll-restore', () => null)
 
   const availableLocales = computed(() => locales.value)

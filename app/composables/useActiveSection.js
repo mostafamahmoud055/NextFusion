@@ -111,7 +111,7 @@ export function useActiveSection() {
   function isLocaleScrollLocked() {
     if (!import.meta.client) return false
     const pendingScrollRestore = useState('nf-pending-scroll-restore', () => null)
-    const isLocaleSwitch = useState('nf-locale-switch', () => false)
+    const isLocaleSwitch = useState('nf_locale-switch', () => false)
     return isLocaleSwitch.value || pendingScrollRestore.value != null
   }
 

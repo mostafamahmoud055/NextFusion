@@ -6,7 +6,7 @@ export default defineNuxtPlugin((nuxtApp) => {
     isScrollHashSync
   } = useActiveSection()
   const pendingScrollRestore = useState('nf-pending-scroll-restore', () => null)
-  const isLocaleSwitch = useState('nf-locale-switch', () => false)
+  const isLocaleSwitch = useState('nf_locale-switch', () => false)
 
   nuxtApp.hook('page:finish', () => {
     const route = useRoute()

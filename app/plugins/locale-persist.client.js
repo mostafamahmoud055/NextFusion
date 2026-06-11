@@ -1,4 +1,4 @@
-const STORAGE_KEY = 'nf-locale'
+const STORAGE_KEY = 'nf_locale'
 
 export default defineNuxtPlugin((nuxtApp) => {
   const i18n = nuxtApp.$i18n
