@@ -14,6 +14,8 @@ export function useLocaleSwitch() {
   async function switchLocale(code) {
     if (code === locale.value) return
 
+    const route = useRoute()
+
     if (import.meta.client) {
       isLocaleSwitch.value = true
       pendingScrollRestore.value = window.scrollY
@@ -21,7 +23,10 @@ export function useLocaleSwitch() {
       document.cookie = `${STORAGE_KEY}=${code};path=/;max-age=31536000;SameSite=Lax`
     }
 
-    await navigateTo(switchLocalePath(code))
+    await navigateTo({
+      path: switchLocalePath(code),
+      hash: route.hash || undefined
+    })
   }
 
   return {

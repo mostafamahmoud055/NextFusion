@@ -2,6 +2,8 @@ import { refreshScrollTriggers } from '~/utils/gsapScroll'
 
 export default defineNuxtPlugin((nuxtApp) => {
   const pendingScrollRestore = useState('nf-pending-scroll-restore', () => null)
+  const isLocaleSwitch = useState('nf-locale-switch', () => false)
+  const { calculateActiveSection, setupSectionObserver, isHomePage } = useActiveSection()
 
   nuxtApp.hook('page:finish', () => {
     const scrollY = pendingScrollRestore.value
@@ -13,16 +15,24 @@ export default defineNuxtPlugin((nuxtApp) => {
       window.scrollTo({ top: scrollY, left: 0, behavior: 'auto' })
     }
 
+    const finish = () => {
+      restore()
+      refreshScrollTriggers('locale-scroll')
+
+      const route = useRoute()
+      if (isHomePage(route.path)) {
+        setupSectionObserver()
+        calculateActiveSection()
+      }
+
+      isLocaleSwitch.value = false
+    }
+
     nextTick(() => {
       restore()
-      requestAnimationFrame(() => {
-        restore()
-        refreshScrollTriggers('locale-scroll')
-      })
-      setTimeout(() => {
-        restore()
-        refreshScrollTriggers('locale-scroll-delayed')
-      }, 50)
+      requestAnimationFrame(finish)
+      setTimeout(finish, 80)
+      setTimeout(finish, 200)
     })
   })
 })

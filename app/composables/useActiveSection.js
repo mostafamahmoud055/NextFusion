@@ -18,6 +18,7 @@ export function useActiveSection() {
   const activeSection = useState('nf-active-section', () => 'home')
   const pinnedSection = useState('nf-pinned-section', () => null)
   const pendingSection = useState('nf-pending-section', () => null)
+  const isScrollHashSync = useState('nf-scroll-hash-sync', () => false)
 
   let scrollHandler = null
   let resizeHandler = null
@@ -74,6 +75,53 @@ export function useActiveSection() {
     scrollEndTimer = setTimeout(finish, 1000)
   }
 
+  function syncUrlHash(sectionId) {
+    if (!import.meta.client || pinnedSection.value) return
+
+    const route = useRoute()
+    if (!isHomePage(route.path)) return
+
+    const hash = `#${sectionId}`
+    if (window.location.hash === hash) return
+
+    // Update the address bar only — avoid router navigation (it re-triggers
+    // initHomeSections and scrolls the section back to its top).
+    isScrollHashSync.value = true
+    const url = `${window.location.pathname}${window.location.search}${hash}`
+    window.history.replaceState(window.history.state, '', url)
+    nextTick(() => {
+      isScrollHashSync.value = false
+    })
+  }
+
+  function isNearSection(sectionId) {
+    if (sectionId === 'home') {
+      return window.scrollY < HOME_SCROLL_MAX + 40
+    }
+
+    const el = document.getElementById(sectionId)
+    if (!el) return false
+
+    const sectionTop = el.getBoundingClientRect().top + window.scrollY - SECTION_SCROLL_OFFSET
+    const scrollY = window.scrollY
+
+    return scrollY >= sectionTop - 100 && scrollY < sectionTop + el.offsetHeight - 120
+  }
+
+  function isLocaleScrollLocked() {
+    if (!import.meta.client) return false
+    const pendingScrollRestore = useState('nf-pending-scroll-restore', () => null)
+    const isLocaleSwitch = useState('nf-locale-switch', () => false)
+    return isLocaleSwitch.value || pendingScrollRestore.value != null
+  }
+
+  function shouldScrollToSection(sectionId) {
+    if (isLocaleScrollLocked()) return false
+    if (pendingSection.value) return true
+    if (isNearSection(sectionId)) return false
+    return true
+  }
+
   function calculateActiveSection() {
     if (pinnedSection.value) {
       activeSection.value = pinnedSection.value
@@ -86,26 +134,25 @@ export function useActiveSection() {
     const scrollBottom = window.scrollY + window.innerHeight
     const docHeight = document.documentElement.scrollHeight
 
+    let next = sections[0].id
+
     if (window.scrollY < HOME_SCROLL_MAX) {
-      activeSection.value = 'home'
-      return
-    }
-
-    if (scrollBottom >= docHeight - 60) {
-      activeSection.value = sections[sections.length - 1].id
-      return
-    }
-
-    let current = sections[0].id
-
-    for (const section of sections) {
-      const top = section.getBoundingClientRect().top
-      if (top <= ACTIVATION_LINE) {
-        current = section.id
+      next = 'home'
+    } else if (scrollBottom >= docHeight - 60) {
+      next = sections[sections.length - 1].id
+    } else {
+      for (const section of sections) {
+        const top = section.getBoundingClientRect().top
+        if (top <= ACTIVATION_LINE) {
+          next = section.id
+        }
       }
     }
 
-    activeSection.value = current
+    if (activeSection.value !== next) {
+      activeSection.value = next
+      syncUrlHash(next)
+    }
   }
 
   function setupSectionObserver() {
@@ -223,9 +270,20 @@ export function useActiveSection() {
     if (!import.meta.client) return
 
     const sectionId = resolveTargetSection(hash)
+    setupSectionObserver()
+
+    if (isLocaleScrollLocked()) {
+      activeSection.value = sectionId
+      return
+    }
+
+    if (!shouldScrollToSection(sectionId)) {
+      activeSection.value = sectionId
+      return
+    }
+
     const token = ++initToken
     pinSection(sectionId)
-    setupSectionObserver()
     scheduleSectionScroll(sectionId, token)
   }
 
@@ -271,6 +329,8 @@ export function useActiveSection() {
     activeSection,
     pinnedSection,
     pendingSection,
+    isScrollHashSync,
+    isLocaleScrollLocked,
     setupSectionObserver,
     teardownSectionObserver,
     isHomePage,

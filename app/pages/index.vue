@@ -15,7 +15,15 @@ const {
 usePageSeo('home')
 
 const route = useRoute()
-const { initHomeSections, isHomePage } = useActiveSection()
+const {
+  initHomeSections,
+  isHomePage,
+  navigateToHomeSection,
+  isScrollHashSync,
+  isLocaleScrollLocked,
+  setupSectionObserver,
+  calculateActiveSection
+} = useActiveSection()
 const pageRef = ref(null)
 
 useFadeIn(pageRef)
@@ -27,11 +35,22 @@ const pillarIcons = {
 }
 
 function syncHomeScroll() {
-  initHomeSections(route.hash)
+  if (isScrollHashSync.value || isLocaleScrollLocked()) {
+    setupSectionObserver()
+    return
+  }
+
+  if (route.hash) {
+    initHomeSections(route.hash)
+    return
+  }
+
+  setupSectionObserver()
+  calculateActiveSection()
 }
 
 function scrollToServices() {
-  initHomeSections('#services')
+  navigateToHomeSection('services')
 }
 
 onMounted(() => {
@@ -39,8 +58,9 @@ onMounted(() => {
 })
 
 watch(
-  () => route.hash,
+  () => [route.path, route.hash],
   () => {
+    if (isScrollHashSync.value || isLocaleScrollLocked()) return
     if (isHomePage(route.path)) {
       nextTick(syncHomeScroll)
     }
