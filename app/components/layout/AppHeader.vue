@@ -88,7 +88,7 @@ onUnmounted(() => {
     :class="scrolled ? 'bg-nf-bg-elevated border-white/8 shadow-[var(--shadow-nf-xs)]' : 'bg-nf-bg/0 border-transparent'"
   >
     <div class="max-w-7xl mx-auto px-6">
-      <div class="flex items-center justify-between h-16 lg:h-[4.5rem]">
+      <div class="flex items-center justify-between h-28 lg:h-32">
         <NuxtLink
           :to="localePath({ path: '/', hash: '#home' })"
           class="flex items-center shrink-0"
