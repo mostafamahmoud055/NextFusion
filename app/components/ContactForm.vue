@@ -3,6 +3,9 @@ import { useI18n } from 'vue-i18n'
 
 const { t, locale } = useI18n()
 const toast = useToast()
+const config = useRuntimeConfig()
+
+const contactEmail = computed(() => config.public.contactEmail || 'info@nextfusion.net')
 
 const state = reactive({
   name: '',
@@ -57,27 +60,59 @@ function validate(formState) {
   return errors
 }
 
+function subjectLabel(value) {
+  return subjectOptions.value.find(option => option.value === value)?.label || value
+}
+
 async function onSubmit() {
   submitting.value = true
-  await new Promise(resolve => setTimeout(resolve, 600))
 
-  toast.add({
-    title: t('common.messageSent'),
-    description: t('common.messageSentDesc'),
-    color: 'success',
-    icon: 'i-lucide-check-circle'
-  })
+  try {
+    await $fetch(`https://formsubmit.co/ajax/${contactEmail.value}`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json'
+      },
+      body: {
+        name: state.name.trim(),
+        email: state.email.trim(),
+        company: state.company.trim() || '—',
+        phone: state.phone.trim() || '—',
+        subject: subjectLabel(state.subject),
+        message: state.message.trim(),
+        _replyto: state.email.trim(),
+        _subject: `NextFusion Contact: ${subjectLabel(state.subject)}`,
+        _template: 'table',
+        _captcha: 'false'
+      }
+    })
 
-  Object.assign(state, {
-    name: '',
-    email: '',
-    company: '',
-    phone: '',
-    subject: '',
-    message: ''
-  })
+    toast.add({
+      title: t('common.messageSent'),
+      description: t('common.messageSentDesc'),
+      color: 'success',
+      icon: 'i-lucide-check-circle'
+    })
 
-  submitting.value = false
+    Object.assign(state, {
+      name: '',
+      email: '',
+      company: '',
+      phone: '',
+      subject: '',
+      message: ''
+    })
+  } catch {
+    toast.add({
+      title: t('common.messageError'),
+      description: t('common.messageErrorDesc'),
+      color: 'error',
+      icon: 'i-lucide-alert-circle'
+    })
+  } finally {
+    submitting.value = false
+  }
 }
 </script>
 
@@ -109,7 +144,7 @@ async function onSubmit() {
             v-model="state.name"
             :placeholder="t('contact.form.namePlaceholder')"
             icon="i-lucide-user"
-            :ui="inputUi"
+            :ui="{ root: 'w-full', base: inputUi.base }"
             autocomplete="name"
           />
         </UFormField>
@@ -124,7 +159,7 @@ async function onSubmit() {
             type="email"
             :placeholder="t('contact.form.emailPlaceholder')"
             icon="i-lucide-mail"
-            :ui="inputUi"
+            :ui="{ root: 'w-full', base: inputUi.base }"
             autocomplete="email"
           />
         </UFormField>
@@ -139,7 +174,7 @@ async function onSubmit() {
             v-model="state.company"
             :placeholder="t('contact.form.companyPlaceholder')"
             icon="i-lucide-building-2"
-            :ui="inputUi"
+            :ui="{ root: 'w-full', base: inputUi.base }"
             autocomplete="organization"
           />
         </UFormField>
@@ -153,7 +188,7 @@ async function onSubmit() {
             type="tel"
             :placeholder="t('contact.form.phonePlaceholder')"
             icon="i-lucide-phone"
-            :ui="inputUi"
+            :ui="{ root: 'w-full', base: inputUi.base }"
             autocomplete="tel"
           />
         </UFormField>
@@ -169,7 +204,7 @@ async function onSubmit() {
           :items="subjectOptions"
           :placeholder="t('contact.form.subjectPlaceholder')"
           :content="{ position: 'popper', side: 'bottom', sideOffset: 4 }"
-          :ui="{ base: inputUi.base }"
+          :ui="{ root: 'w-full', base: `${inputUi.base} w-full` }"
         />
       </UFormField>
 
@@ -182,7 +217,8 @@ async function onSubmit() {
           v-model="state.message"
           :placeholder="t('contact.form.messagePlaceholder')"
           :rows="6"
-          :ui="{ base: `${inputUi.base} resize-y min-h-[140px]` }"
+          class="w-full"
+          :ui="{ root: 'w-full', base: `${inputUi.base} w-full resize-y min-h-[140px]` }"
         />
       </UFormField>
 

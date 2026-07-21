@@ -31,7 +31,7 @@ function buildJsonLd(pageKey, { fullTitle, description, url, locale, siteRoot, i
         name: 'NextFusion',
         url: siteRoot,
         logo: logoUrl,
-        email: 'info@nextfusion.com',
+        email: 'info@nextfusion.net',
         description,
         areaServed: ['EG', 'JO', 'MENA'],
         sameAs: []

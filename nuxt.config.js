@@ -10,7 +10,8 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://nextfusion.net'
+      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://nextfusion.net',
+      contactEmail: process.env.NUXT_PUBLIC_CONTACT_EMAIL || 'info@nextfusion.net'
     }
   },
 

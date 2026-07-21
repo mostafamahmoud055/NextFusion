@@ -1,6 +1,6 @@
 export function useSiteUrl() {
   const config = useRuntimeConfig()
-  const siteRoot = String(config.public.siteUrl || 'https://nextfusion.com').replace(/\/$/, '')
+  const siteRoot = String(config.public.siteUrl || 'https://nextfusion.net').replace(/\/$/, '')
 
   function absoluteUrl(path = '') {
     const cleanPath = path.startsWith('/') ? path : `/${path}`

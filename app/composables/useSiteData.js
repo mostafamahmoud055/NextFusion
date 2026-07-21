@@ -63,8 +63,8 @@ export function useSiteData() {
 
   const company = computed(() => ({
     name: 'NextFusion',
-    email: 'info@nextfusion.com',
-    website: 'www.nextfusion.com',
+    email: 'info@nextfusion.net',
+    website: 'www.nextfusion.net',
     tagline: t('company.tagline'),
     description: t('company.description'),
     teamExpertise: t('company.teamExpertise'),

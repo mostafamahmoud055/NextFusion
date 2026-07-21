@@ -102,26 +102,7 @@ const officeLocations = computed(() => [
               </div>
             </div>
 
-            <div class="nf-glass p-4">
-              <div class="flex items-center gap-3">
-                <div class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-white/5 border border-white/8">
-                  <UIcon name="i-lucide-globe" class="size-5 text-nf-cyan" />
-                </div>
-                <div>
-                  <p class="text-xs text-slate-500 mb-0.5">
-                    {{ t('contact.website') }}
-                  </p>
-                  <a
-                    href="https://www.nextfusion.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-sm text-white hover:text-nf-cyan transition-colors"
-                  >
-                    {{ company.website }}
-                  </a>
-                </div>
-              </div>
-            </div>
+
           </div>
 
           <!-- Response time -->
