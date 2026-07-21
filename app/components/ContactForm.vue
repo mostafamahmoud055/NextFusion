@@ -49,6 +49,14 @@ function validate(formState) {
     errors.push({ name: 'email', message: t('contact.form.errors.email') })
   }
 
+  if (!formState.company?.trim()) {
+    errors.push({ name: 'company', message: t('contact.form.errors.company') })
+  }
+
+  if (!formState.phone?.trim()) {
+    errors.push({ name: 'phone', message: t('contact.form.errors.phone') })
+  }
+
   if (!formState.subject) {
     errors.push({ name: 'subject', message: t('contact.form.errors.subject') })
   }
@@ -77,8 +85,8 @@ async function onSubmit() {
       body: {
         name: state.name.trim(),
         email: state.email.trim(),
-        company: state.company.trim() || '—',
-        phone: state.phone.trim() || '—',
+        company: state.company.trim(),
+        phone: state.phone.trim(),
         subject: subjectLabel(state.subject),
         message: state.message.trim(),
         _replyto: state.email.trim(),
@@ -169,6 +177,7 @@ async function onSubmit() {
         <UFormField
           :label="t('contact.form.company')"
           name="company"
+          required
         >
           <UInput
             v-model="state.company"
@@ -182,6 +191,7 @@ async function onSubmit() {
         <UFormField
           :label="t('contact.form.phone')"
           name="phone"
+          required
         >
           <UInput
             v-model="state.phone"

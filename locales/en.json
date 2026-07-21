@@ -2201,6 +2201,8 @@
       "errors": {
         "name": "Please enter your full name",
         "email": "Please enter a valid email address",
+        "company": "Please enter your company name",
+        "phone": "Please enter your phone number",
         "subject": "Please select a subject",
         "message": "Please enter at least 20 characters"
       },
