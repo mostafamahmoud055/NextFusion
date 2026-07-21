@@ -43,7 +43,7 @@ export default defineNuxtConfig({
       meta: [
         { name: 'application-name', content: 'NextFusion' },
         { name: 'author', content: 'NextFusion' },
-        { name: 'theme-color', content: '#0a0f1a' },
+        { name: 'theme-color', content: '#070b12' },
         { name: 'format-detection', content: 'telephone=no' }
       ]
     },

@@ -86,8 +86,7 @@ const officeLocations = computed(() => [
             >
               <div class="flex items-center gap-3">
                 <div class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-white/5 border border-white/8">
-                  <UIcon name="i-simple-icons-whatsapp" class="size-5 text-nf-cyan" />
-                </div>
+                  <UIcon name="i-simple-icons-whatsapp" class="size-5 text-nf-cyan" />                </div>
                 <div>
                   <p class="text-xs text-slate-500 mb-0.5">
                     {{ phone.label }}

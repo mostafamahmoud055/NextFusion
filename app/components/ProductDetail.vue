@@ -42,7 +42,7 @@ usePageSeo(props.seoKey)
           >
             <UIcon
               name="i-lucide-check-circle"
-              class="size-4 text-purple-400 shrink-0 mt-0.5"
+              class="size-4 text-nf-cyan shrink-0 mt-0.5"
             />
             {{ feature }}
           </li>

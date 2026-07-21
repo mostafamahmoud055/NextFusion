@@ -24,7 +24,7 @@
         cx="1180"
         cy="140"
         r="280"
-        stroke="rgb(34 211 238)"
+        stroke="rgb(61 110 168)"
         stroke-opacity="0.06"
         stroke-width="1"
       />
@@ -32,7 +32,7 @@
         cx="1180"
         cy="140"
         r="200"
-        stroke="rgb(139 92 246)"
+        stroke="rgb(30 58 95)"
         stroke-opacity="0.04"
         stroke-width="1"
         stroke-dasharray="6 10"
@@ -47,7 +47,7 @@
       />
       <path
         d="M0 420 C360 380, 480 520, 840 480 S1320 360, 1440 400"
-        stroke="rgb(34 211 238)"
+        stroke="rgb(61 110 168)"
         stroke-opacity="0.05"
         stroke-width="1"
       />
@@ -63,14 +63,14 @@
         width="160"
         height="160"
         rx="12"
-        stroke="rgb(34 211 238)"
+        stroke="rgb(61 110 168)"
         stroke-opacity="0.04"
         stroke-width="1"
         transform="rotate(12 160 200)"
       />
       <polygon
         points="1320,620 1380,560 1440,620 1380,680"
-        stroke="rgb(232 185 35)"
+        stroke="rgb(184 151 90)"
         stroke-opacity="0.05"
         stroke-width="1"
       />
