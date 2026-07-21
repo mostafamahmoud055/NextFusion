@@ -10,7 +10,7 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://nextfusion.com'
+      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://nextfusion.net'
     }
   },
 
@@ -51,7 +51,7 @@ export default defineNuxtConfig({
   },
 
   i18n: {
-    baseUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://nextfusion.com',
+    baseUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://nextfusion.net',
     locales: [
       { code: 'en', language: 'en-US', name: 'English', file: 'en.json', dir: 'ltr' },
       { code: 'ar', language: 'ar-EG', name: 'العربية', file: 'ar.json', dir: 'rtl' }
