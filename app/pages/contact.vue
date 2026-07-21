@@ -20,14 +20,14 @@ const officeLocations = computed(() => [
   {
     key: 'amman',
     title: t('contact.jordanOffice'),
-    address: company.value.locations[1]?.address,
+    address: company.value.locations[0]?.address,
     mapSrc: 'https://maps.google.com/maps?q=Amman,Jordan&output=embed',
     mapTitle: t('contact.mapTitle.amman')
   },
   {
     key: 'alexandria',
     title: t('contact.egyptOffice'),
-    address: company.value.locations[0]?.address,
+    address: company.value.locations[1]?.address,
     mapSrc: 'https://maps.google.com/maps?q=Alexandria,Egypt&output=embed',
     mapTitle: t('contact.mapTitle.alexandria')
   }
@@ -86,14 +86,16 @@ const officeLocations = computed(() => [
             >
               <div class="flex items-center gap-3">
                 <div class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-white/5 border border-white/8">
-                  <UIcon name="i-lucide-phone" class="size-5 text-nf-cyan" />
+                  <UIcon name="i-simple-icons-whatsapp" class="size-5 text-nf-cyan" />
                 </div>
                 <div>
                   <p class="text-xs text-slate-500 mb-0.5">
                     {{ phone.label }}
                   </p>
                   <a
-                    :href="`tel:${phone.number.replace(/\s/g, '')}`"
+                    :href="`https://wa.me/${phone.number.replace(/\D/g, '')}`"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     class="text-sm text-white hover:text-nf-cyan transition-colors"
                   >
                     {{ phone.number }}
