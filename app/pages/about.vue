@@ -182,7 +182,7 @@ useFadeIn(pageRef)
               <h3 class="font-semibold text-white mb-1">
                 {{ location.city }}, {{ location.country }}
               </h3>
-              <p class="text-sm text-slate-500 leading-relaxed">
+              <p class="text-sm text-slate-500 leading-relaxed whitespace-pre-line">
                 {{ location.address }}
               </p>
             </div>

@@ -21,7 +21,7 @@ const officeLocations = computed(() => [
     key: 'amman',
     title: t('contact.jordanOffice'),
     address: company.value.locations[0]?.address,
-    mapSrc: 'https://maps.google.com/maps?q=Jordan+Islamic+Bank+JIB+Complex+Owaim+Bin+Saedah+St+72+Amman&output=embed',
+    mapSrc: 'https://maps.google.com/maps?q=Jordan+Islamic+Bank+JIB+Complex+Owaim+Bin+Saadah+St+72+Amman+Jordan&output=embed',
     mapTitle: t('contact.mapTitle.amman')
   },
   {
@@ -164,7 +164,7 @@ const officeLocations = computed(() => [
                   <p class="font-medium text-white text-sm">
                     {{ office.title }}
                   </p>
-                  <p class="text-xs text-slate-500 mt-1">
+                  <p class="text-xs text-slate-500 mt-1 whitespace-pre-line">
                     {{ office.address }}
                   </p>
                 </div>
