@@ -21,7 +21,7 @@ const officeLocations = computed(() => [
     key: 'amman',
     title: t('contact.jordanOffice'),
     address: company.value.locations[0]?.address,
-    mapSrc: 'https://maps.google.com/maps?q=Amman,Jordan&output=embed',
+    mapSrc: 'https://maps.google.com/maps?q=Jordan+Islamic+Bank+JIB+Complex+Owaim+Bin+Saedah+St+72+Amman&output=embed',
     mapTitle: t('contact.mapTitle.amman')
   },
   {
